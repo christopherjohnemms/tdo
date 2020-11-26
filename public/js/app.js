@@ -63264,14 +63264,26 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
+/***/ "./resources/sass/tdo.scss":
+/*!*********************************!*\
+  !*** ./resources/sass/tdo.scss ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ 0:
-/*!***********************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/css/app.css ***!
-  \***********************************************************/
+/*!*************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/tdo.scss ./resources/css/app.css ***!
+  \*************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! C:\projects\tdo\resources\js\app.js */"./resources/js/app.js");
+__webpack_require__(/*! C:\projects\tdo\resources\sass\tdo.scss */"./resources/sass/tdo.scss");
 module.exports = __webpack_require__(/*! C:\projects\tdo\resources\css\app.css */"./resources/css/app.css");
 
 

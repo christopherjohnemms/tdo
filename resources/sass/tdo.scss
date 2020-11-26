@@ -1,0 +1,195 @@
+body{
+    background-color: #000;
+}
+.header{
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top:20px;
+    .detail{
+        flex: 1 1 auto;
+        max-width: 199px;
+        margin-right:95px;
+    }
+    .detail-last{
+        margin-right:0;
+        margin-left:95px;
+    }
+    .img{
+        flex: 0 0 160px;
+        margin-right:20px;
+    }
+    .img-last{
+        margin-right:0 !important;
+    }
+    p{
+        color:Red;
+        text-align: center;
+        font-size: 24px;
+        line-height: 30px;
+        font-weight:400;
+        span{
+            display: block;
+            color:#fff;
+            font-weight:700;
+            font-size: 30px;
+            line-height: 38px;
+        }
+    }
+}
+
+.container{
+    max-width: 960px;
+    margin:0 auto;
+}
+
+.navigation{
+    margin-top:20px;
+    ul{
+        list-style-type: none;
+        padding:0;
+        margin:0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        li{
+            a{
+                display: block;
+                &.active{
+                    span{
+                        color:red !important
+                    }
+                }
+                span{
+                    color:#fff;
+                    font-weight:600;
+                    text-align: center;
+                    display: block;
+                    margin-bottom: 3px;
+                    font-size: 15px;
+                }
+                .rollover{
+                    -webkit-background-size: cover;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: top center;
+                    filter: brightness(0.2);
+                    -webkit-transition: all 300ms ease;
+                    -moz-transition: all 300ms ease;
+                    -ms-transition: all 300ms ease;
+                    -o-transition: all 300ms ease;
+                    transition: all 300ms ease;
+                }
+                .home{
+                    width:100%;
+                    height:110px;
+                    background-image: url('/images/nav/home.png');
+                }
+                .tigers{
+                    width:100%;
+                    height:110px;
+                    background-image: url('/images/nav/tigers.png');
+                }
+                .starting{
+                    width:100%;
+                    height:110px;
+                    background-image: url('/images/nav/starting.png');
+                }
+                .about{
+                    width:100%;
+                    height:110px;
+                    background-image: url('/images/nav/about.png');
+                }
+                .instructor{
+                    width:100%;
+                    height:110px;
+                    background-image: url('/images/nav/instructor.png');
+                }
+                .contact{
+                    width:100%;
+                    height:110px;
+                    background-image: url('/images/nav/contact.png');
+                }
+                .members{
+                    width:100%;
+                    height:110px;
+                    background-image: url('/images/nav/members.png');
+                }
+                .gallery{
+                    width:100%;
+                    height:110px;
+                    background-image: url('/images/nav/gallery.png');
+                }
+
+                &:hover{
+                    span{
+                        color:red !important;
+                    }
+                    .rollover{
+                        filter: brightness(1) !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer{
+    background-image: url('/images/footer/burntwood-cannock-taekwondo-footer-red.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    min-height: 274px;
+    padding-top:30px;
+    .flex-footer{
+        display: flex;
+        justify-content: space-between;
+        max-width: 960px;
+        margin:0 auto;
+     .address{
+         flex: 0 1 340px;
+         .address-flex{
+             display: flex;
+             .img{
+                 flex: none;
+                 margin-right:25px;
+             }
+         }
+         p{
+             color:#fff;
+             font-size:14px;
+             &:first-child{
+                 margin-top:0;
+             }
+         }
+     }
+        .phone{
+            flex: 1 1 160px;
+            margin-left:50px;
+            .phone-flex{
+                display: flex;
+                p{
+                    color:#fff;
+                    font-size:14px;
+                    &:first-child{
+                        margin-top:0;
+                    }
+                }
+                .img{
+                    flex: none;
+                    margin-right:25px;
+                }
+            }
+        }
+        .social-flex{
+            ul{
+                list-style-type: none;
+                margin:0;
+                padding:0;
+                li{
+                    display: inline-block;
+                    margin-left:5px;
+                }
+            }
+        }
+    }
+}

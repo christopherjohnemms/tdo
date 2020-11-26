@@ -1,0 +1,217 @@
+body {
+  background-color: #000;
+}
+
+.header {
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.header .detail {
+  flex: 1 1 auto;
+  max-width: 199px;
+  margin-right: 95px;
+}
+
+.header .detail-last {
+  margin-right: 0;
+  margin-left: 95px;
+}
+
+.header .img {
+  flex: 0 0 160px;
+  margin-right: 20px;
+}
+
+.header .img-last {
+  margin-right: 0 !important;
+}
+
+.header p {
+  color: Red;
+  text-align: center;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.header p span {
+  display: block;
+  color: #fff;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.navigation {
+  margin-top: 20px;
+}
+
+.navigation ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.navigation ul li a {
+  display: block;
+}
+
+.navigation ul li a.active span {
+  color: red !important;
+}
+
+.navigation ul li a span {
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  display: block;
+  margin-bottom: 3px;
+  font-size: 15px;
+}
+
+.navigation ul li a .rollover {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  filter: brightness(0.2);
+  transition: all 300ms ease;
+}
+
+.navigation ul li a .home {
+  width: 100%;
+  height: 110px;
+  background-image: url("/images/nav/home.png");
+}
+
+.navigation ul li a .tigers {
+  width: 100%;
+  height: 110px;
+  background-image: url("/images/nav/tigers.png");
+}
+
+.navigation ul li a .starting {
+  width: 100%;
+  height: 110px;
+  background-image: url("/images/nav/starting.png");
+}
+
+.navigation ul li a .about {
+  width: 100%;
+  height: 110px;
+  background-image: url("/images/nav/about.png");
+}
+
+.navigation ul li a .instructor {
+  width: 100%;
+  height: 110px;
+  background-image: url("/images/nav/instructor.png");
+}
+
+.navigation ul li a .contact {
+  width: 100%;
+  height: 110px;
+  background-image: url("/images/nav/contact.png");
+}
+
+.navigation ul li a .members {
+  width: 100%;
+  height: 110px;
+  background-image: url("/images/nav/members.png");
+}
+
+.navigation ul li a .gallery {
+  width: 100%;
+  height: 110px;
+  background-image: url("/images/nav/gallery.png");
+}
+
+.navigation ul li a:hover span {
+  color: red !important;
+}
+
+.navigation ul li a:hover .rollover {
+  filter: brightness(1) !important;
+}
+
+.footer {
+  background-image: url("/images/footer/burntwood-cannock-taekwondo-footer-red.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  min-height: 274px;
+  padding-top: 30px;
+}
+
+.footer .flex-footer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.footer .flex-footer .address {
+  flex: 0 1 340px;
+}
+
+.footer .flex-footer .address .address-flex {
+  display: flex;
+}
+
+.footer .flex-footer .address .address-flex .img {
+  flex: none;
+  margin-right: 25px;
+}
+
+.footer .flex-footer .address p {
+  color: #fff;
+  font-size: 14px;
+}
+
+.footer .flex-footer .address p:first-child {
+  margin-top: 0;
+}
+
+.footer .flex-footer .phone {
+  flex: 1 1 160px;
+  margin-left: 50px;
+}
+
+.footer .flex-footer .phone .phone-flex {
+  display: flex;
+}
+
+.footer .flex-footer .phone .phone-flex p {
+  color: #fff;
+  font-size: 14px;
+}
+
+.footer .flex-footer .phone .phone-flex p:first-child {
+  margin-top: 0;
+}
+
+.footer .flex-footer .phone .phone-flex .img {
+  flex: none;
+  margin-right: 25px;
+}
+
+.footer .flex-footer .social-flex ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer .flex-footer .social-flex ul li {
+  display: inline-block;
+  margin-left: 5px;
+}
+
