@@ -52,37 +52,37 @@
                 </a>
             </li>
             <li>
-                <a href="test">
+                <a href="{{ url('/starting') }}">
                     <span>Starting</span>
                     <div class="rollover starting"></div>
                 </a>
             </li>
             <li>
-                <a href="test">
+                <a href="{{ url('/about') }}">
                     <span>About</span>
                     <div class="rollover about"></div>
                 </a>
             </li>
             <li>
-                <a href="test">
+                <a href="{{ url('/instructor') }}">
                     <span>Instructor</span>
                     <div class="rollover instructor"></div>
                 </a>
             </li>
             <li>
-                <a href="test">
+                <a href="{{ url('/contact') }}">
                     <span>Contact</span>
                     <div class="rollover contact"></div>
                 </a>
             </li>
             <li>
-                <a href="test">
+                <a href="{{ url('/members') }}">
                     <span>Members</span>
                     <div class="rollover members"></div>
                 </a>
             </li>
             <li>
-                <a href="test">
+                <a href="{{ url('/gallery') }}">
                     <span>Gallery</span>
                     <div class="rollover gallery"></div>
                 </a>

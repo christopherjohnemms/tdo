@@ -21,6 +21,11 @@ Route::get('/tigers', function () {
     return view('tigers');
 });
 
+Route::get('/starting', function () {
+    return view('starting');
+});
+
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia\Inertia::render('Dashboard');
 })->name('dashboard');
