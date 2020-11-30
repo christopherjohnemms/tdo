@@ -1,5 +1,19 @@
+@charset "UTF-8";
+
 body {
   background-color: #000;
+}
+
+.headingPromo {
+  font-size: 1.7rem;
+  color: #fff;
+  background: #ED1C24;
+  display: block;
+  padding: 5px;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 3px;
 }
 
 .header {
@@ -31,7 +45,7 @@ body {
 }
 
 .header p {
-  color: Red;
+  color: #ED1C24;
   text-align: center;
   font-size: 24px;
   line-height: 30px;
@@ -68,7 +82,7 @@ body {
 }
 
 .navigation ul li a.active span {
-  color: red !important;
+  color: #ED1C24 !important;
 }
 
 .navigation ul li a span {
@@ -144,12 +158,222 @@ body {
   filter: brightness(1) !important;
 }
 
+.page .home-slider {
+  position: relative;
+}
+
+.page .home-slider .slick-prev {
+  position: absolute;
+  bottom: -15px;
+  left: 47%;
+  z-index: 100;
+  width: 35px;
+  height: 35px;
+  border-style: none;
+  text-indent: -9999px;
+  background-image: url("/images/home/arrow-left-black.jpg");
+  cursor: pointer;
+}
+
+.page .home-slider .slick-prev:hover {
+  background-image: url("/images/home/arrow-left-red.jpg");
+}
+
+.page .home-slider .slick-next {
+  position: absolute;
+  bottom: -15px;
+  left: calc(47% + 45px);
+  z-index: 100;
+  width: 35px;
+  height: 35px;
+  border-style: none;
+  text-indent: -9999px;
+  background-image: url("/images/home/arrow-right-black.jpg");
+  cursor: pointer;
+}
+
+.page .home-slider .slick-next:hover {
+  background-image: url("/images/home/arrow-right-red.jpg");
+}
+
+.page .welcome-block {
+  background: #fff;
+  width: 960px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 10px 40px;
+}
+
+.page .welcome-block.tigers-welcome {
+  margin-top: -190px;
+  padding-top: 240px;
+}
+
+.page .welcome-block .flex-container {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #333;
+}
+
+.page .welcome-block .flex-container .left {
+  flex: 1 1 auto;
+}
+
+.page .welcome-block .flex-container .right {
+  flex: 0 0 359px;
+  margin-left: 20px;
+}
+
+.page .welcome-block .flex-container .right img {
+  display: block;
+  width: 100%;
+}
+
+.page .welcome-block .flex-container .childrens {
+  flex: 1 1 50%;
+  margin-right: 20px;
+  margin-bottom: 80px;
+}
+
+.page .welcome-block .flex-container .childrens .tigers-bg {
+  width: 100%;
+  height: 282px;
+  background-image: url("/images/home/taekwondo-tigers-normal.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #000;
+}
+
+.page .welcome-block .flex-container .childrens .tigers-bg:hover {
+  background-image: url("/images/home/taekwondo-tigers-rollover.png");
+}
+
+.page .welcome-block .flex-container .schedule {
+  flex: 1 1 50%;
+  margin-left: 20px;
+}
+
+.page .welcome-block .flex-container .schedule .schedule-table {
+  background: #000;
+}
+
+.page .welcome-block .flex-container .schedule .schedule-table .schedule-row {
+  flex: 1 1 auto;
+  border-bottom: 1px solid #fff;
+  padding: 11px 5px;
+  text-align: center;
+}
+
+.page .welcome-block .flex-container .schedule .schedule-table .schedule-row:first-child p {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.page .welcome-block .flex-container .schedule .schedule-table .schedule-row p {
+  color: #fff;
+  margin: 0;
+  font-size: 1.2REM;
+}
+
+.page .welcome-block .flex-container.secondary-box {
+  margin-top: 40px;
+}
+
+.page .welcome-block h1 {
+  color: #ED1C24;
+  font-size: 2.3rem;
+  line-height: 2.5rem;
+}
+
+.page .welcome-block ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.page .welcome-block ul li {
+  margin-bottom: 10px;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.page .welcome-block ul li:before {
+  content: "\2022";
+  color: #ED1C24;
+  font-size: 18px;
+}
+
+.page .tiger-hero {
+  display: block;
+  position: relative;
+}
+
+.page .tiger-hero .tiger-div {
+  position: relative;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.page .tiger-hero .welcome {
+  position: absolute;
+  bottom: 27px;
+  right: 223px;
+  z-index: 100;
+}
+
+.page .tiger-row {
+  border-bottom: none !important;
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+}
+
+.page .tiger-row.reverse {
+  flex-direction: row-reverse;
+  background: #EDECEC;
+}
+
+.page .tiger-row.reverse .right {
+  margin-left: 0 !important;
+  margin-right: 40px !important;
+}
+
+.page .tiger-row img {
+  border: 1px solid #111;
+  padding: 2px;
+}
+
+.page .tiger-row .left .imghead {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.page .tiger-row .left .imghead img {
+  position: relative;
+  background: #FFCB27;
+}
+
+.page .tiger-row .left p {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+.page .tiger-row .right {
+  flex: 0 0 310px !important;
+}
+
 .footer {
   background-image: url("/images/footer/burntwood-cannock-taekwondo-footer-red.png");
   background-position: top center;
   background-repeat: no-repeat;
   min-height: 274px;
   padding-top: 30px;
+}
+
+.footer.tigers-yellow {
+  background-image: url("/images/tigers/burntwood-cannock-taekwondo-footer-yellow.png");
 }
 
 .footer .flex-footer {
