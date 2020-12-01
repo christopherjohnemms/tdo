@@ -25,6 +25,17 @@ Route::get('/starting', function () {
     return view('starting');
 });
 
+Route::get('/about', function () {
+    return view('about');
+});
+
+Route::get('/instructor', function () {
+    return view('instructor');
+});
+
+Route::get('/contact', function () {
+    return view('contact');
+});
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia\Inertia::render('Dashboard');

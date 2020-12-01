@@ -6,96 +6,115 @@
 
     <div class="page" style="min-height: 700px;">
 
-        <div class="home-slider">
-            <div>
-                <img src="{{ url('images/home/hero-panel-taekwondo-expert-tuition.jpg') }}"  style="display:block; width:100%;"/>
-            </div>
-            <div>
-                <img src="{{ url('images/home/hero-panel-taekwondo-high-level.jpg') }}"  style="display:block; width:100%;"/>
-            </div>
-            <div>
-                <img src="{{ url('images/home/hero-panel-taekwondo-martial-arts.jpg') }}"  style="display:block; width:100%;"/>
-            </div>
-            <div>
-                <img src="{{ url('images/home/hero-panel-taekwondo-self-defence.jpg') }}"  style="display:block; width:100%;"/>
-            </div>
-        </div>
 
         <div class="welcome-block">
             <div class="flex-container">
                 <div class="left">
                     <h1>
-                        Welcome to Burntwood
-                        and Cannock Tae Kwon Do
+                        Frequently asked questions when starting Tae Kwon Do
                     </h1>
-                    <ul>
-                        <li>
-                            Britain’s No.1 Tae Kwon Do Club
-                        </li>
-                        <li>
-                            You don’t need to be fit to start training
-                        </li>
-                        <li>
-                            Tae Kwon Do is suitable for men & women of all ages
-                        </li>
-                        <li>
-                            Improve your confidence, fitness and flexibility!
-                        </li>
-                        <li>
-                            Tae Kwon Do is an Olympic sport
-                        </li>
-                        <li>
-                            Member of the TAGB
-                        </li>
-                        <li>
-                            The UK’s largest Tae Kwon Do Association
-                        </li>
-                    </ul>
+                    <div class="faq-row">
+                        <h2>Do I need to be fit to start Tae Kwon Do? </h2>
+                        <p>
+                            No! All the training is targeted to work to the individuals own level of fitness, this method will help you progress quickly and soon after starting Tae Kwon Do you will see personal improvements in fitness and flexibility.
+                        </p>
+                    </div>
+                    <div class="faq-row">
+                        <h2>Will I need a suit to start Tae Kwon Do?</h2>
+                        <p>
+                            I do not push my students into buying suits (doboks) until I am sure they are going to stay about 10 weeks into the classes.
+                        </p>
+                    </div>
+                    <div class="faq-row">
+                        <h2>What do I wear if not a suit?</h2>
+                        <p>
+                            Something loose you can move about in, tracksuit, jogging bottoms or shorts and a T-shirt will be fine.
+                        </p>
+                    </div>
+                    <div class="faq-row">
+                        <h2>Do I have to pay a membership fee?</h2>
+                        <p>
+                            No. Eventually you will need a licence, as this is a legal requirement and your own insurance cover.
+                        </p>
+                    </div>
+                    <div class="faq-row">
+                        <h2>What age do I need to be to start
+                            training in Tae Kwon Do?</h2>
+                        <p>
+                            You can start from about 5 years of age, my oldest student is 63.
+                        </p>
+                    </div>
+                    <div class="faq-row">
+                        <h2>Will I get hurt?</h2>
+                        <p>
+                            No. All the sparring is semi contact in Tae Kwon Do which means the kicks and punches are pulled to make them safe, all the self defence moves are strictly controlled as they are very effective.
+                        </p>
+                    </div>
+                    <div class="faq-row">
+                        <h2>How much will it cost? </h2>
+                        <p>
+                            Per Lesson <span style="font-size:19px; font-weight:700;">£6.50</span><br />
+                            Monthly Membership <span style="font-size:19px; font-weight:700;">£32.00</span><br />
+                            <span style="font-size: 12px;">(payment by cash or cheque)</span>
+                        </p>
+                    </div>
+                    <div class="faq-row">
+                        <h2>How often should I train?</h2>
+                        <p>
+                            To get the most from your Tae Kwon Do training, it is recommended you train at least twice per week.
+                        </p>
+                    </div>
                 </div>
                 <div class="right">
-                    <img src="{{ url('images/home/sean-hardwick-kicking-pose.jpg') }}" alt=""/>
-                </div>
-            </div>
+                    <div class="schedule">
+                        <h3 class="headingPromo">Class Schedule</h3>
+                        <div class="schedule-table">
+                            <div class="schedule-row">
+                                <p>
+                                    Burntwood Club<br />Monday &amp; Wednesday<br><br />
+                                    Cannock Club<br />Tuesday &amp; Thursday
+                                </p>
+                            </div>
 
-            <div class="flex-container secondary-box">
-                <div class="childrens">
-                    <h3 class="headingPromo">Childrens Classes</h3>
-                    <a href="#">
-                        <div class="tigers-bg"></div>
-                    </a>
-                </div>
-                <div class="schedule">
-                    <h3 class="headingPromo">Class Schedule</h3>
-                    <div class="schedule-table">
-                        <div class="schedule-row">
-                            <p>
-                                Burntwood Club: Monday & Wednesday<br />
-                                Cannock Club: Tuesday & Thursday
-                            </p>
-                        </div>
+                            <div class="schedule-row">
+                                <p>
+                                    5.30pm – 6.15pm <br />Tigers Beginners
+                                </p>
+                            </div>
 
-                        <div class="schedule-row">
-                            <p>
-                                5.30pm – 6.15pm: Tigers Beginners
-                            </p>
-                        </div>
+                            <div class="schedule-row">
+                                <p>
+                                    6.15pm – 7.00pm<br /> Tigers Advanced
+                                </p>
+                            </div>
 
-                        <div class="schedule-row">
-                            <p>
-                                6.15pm – 7.00pm: Tigers Advanced
-                            </p>
+                            <div class="schedule-row">
+                                <p>
+                                    7.00pm – 8.00pm<br /> Adults Mixed Ability
+                                </p>
+                            </div>
+                            <div class="schedule-row">
+                                <p>
+                                    8.00pm – 8.30pm<br /> Extra Training / Sparring
+                                </p>
+                            </div>
                         </div>
+                    </div>
+                    <div class="childrens" style="margin-right:0 !important;margin-left:20px !important; margin-bottom:30px !important;">
+                        <h3 class="headingPromo">Childrens Classes</h3>
+                        <a href="{{ url('/tigers') }}">
+                            <div class="tigers-bg"></div>
+                        </a>
+                    </div>
 
-                        <div class="schedule-row">
-                            <p>
-                                7.00pm – 8.00pm: Adults Mixed Ability
-                            </p>
-                        </div>
-                        <div class="schedule-row">
-                            <p>
-                                8.00pm – 8.30pm: Extra Training / Sparring
-                            </p>
-                        </div>
+                    <div class="pack" style="margin-left: 20px !important; margin-bottom:30px !important;position: relative;">
+                        <h3 class="headingPromo">Beginner's pack</h3>
+                        <a href="{{ url('/pdf//taekwondo-beginners-pack.pdf') }}" target="_blank">
+                            <img src="{{ url('images/starting/beginners-pack.jpg') }}" style="width:100%; display: block;" alt="Beginners Pack"/>
+                        </a>
+                        <a href="{{ url('/pdf//taekwondo-beginners-pack.pdf') }}" target="_blank">
+                            <div class="d-l-pack-start"></div>
+                        </a>
                     </div>
                 </div>
             </div>

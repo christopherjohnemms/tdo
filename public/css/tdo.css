@@ -377,6 +377,108 @@ body {
   flex: 0 0 310px !important;
 }
 
+.page .faq-row {
+  margin-bottom: 30px;
+}
+
+.page .faq-row h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #ED1C24;
+  margin-bottom: 0px;
+}
+
+.page .faq-row p {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.page .d-l-pack-start {
+  width: 193px;
+  height: 167px;
+  background-image: url("/images/starting/download-beginners-pack-button-normal.png");
+  background-size: cover;
+  position: absolute;
+  bottom: -15px;
+  left: -150px;
+}
+
+.page .d-l-pack-start:hover {
+  cursor: pointer;
+  background-image: url("/images/starting/download-beginners-pack-button-rollover.png");
+}
+
+.page .button-black {
+  display: block;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: 700;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  max-width: 180px;
+  cursor: pointer;
+}
+
+.page .button-black:hover {
+  background: #ED1C24;
+}
+
+.page .aboutHead {
+  font-size: 36px;
+  font-weight: 700;
+  color: #ED1C24;
+  margin: 0;
+  line-height: 43px;
+}
+
+.page .aboutHeadSmall {
+  font-size: 22px;
+  font-weight: 700;
+  color: #ED1C24;
+  margin: 0;
+  line-height: 32px;
+}
+
+.page form .row {
+  margin-bottom: 20px;
+}
+
+.page form label,
+.page form input,
+.page form textarea {
+  display: block;
+}
+
+.page form label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.page form input {
+  min-height: 23px;
+  color: #111;
+  background-color: #faf8f8;
+  padding: 10px 6px;
+  width: 100%;
+}
+
+.page form textarea {
+  background-color: #faf8f8;
+  padding: 10px 6px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.page form .wrapped-input {
+  display: inline-block;
+  width: 20px;
+  vertical-align: middle;
+}
+
 .footer {
   background-image: url("/images/footer/burntwood-cannock-taekwondo-footer-red.png");
   background-position: top center;
