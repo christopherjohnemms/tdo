@@ -479,6 +479,196 @@ body {
   vertical-align: middle;
 }
 
+.page .members-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page .members-heading h2 {
+  margin-right: 40px;
+  flex: 0 0 706px;
+}
+
+.page .members-heading .key {
+  flex: 1 1 auto;
+}
+
+.page .members-heading ul {
+  padding: 0;
+  margin: 0;
+}
+
+.page .members-heading ul li {
+  font-size: 14px;
+  position: relative;
+  margin-bottom: 1px;
+  text-align: right;
+  padding-right: 32px;
+}
+
+.page .members-heading ul li:before {
+  content: "";
+}
+
+.page .members-heading ul li:after {
+  content: " ";
+  width: 20px;
+  height: 20px;
+  background: red;
+  position: absolute;
+  right: 0;
+  bottom: 3px;
+}
+
+.page .members-heading ul li:nth-child(1):after {
+  background: #FAA61A;
+}
+
+.page .members-heading ul li:nth-child(2):after {
+  background: #003CFF;
+}
+
+.page .members-heading ul li:nth-child(3):after {
+  background: #009B00;
+}
+
+.page .members-heading ul li:nth-child(4):after {
+  background: #fff;
+  border: 1px solid black;
+}
+
+.page .calendar-list .calendar-row {
+  border-bottom: 3px solid #fff;
+}
+
+.page .calendar-list .calendar-row .calendar-nav {
+  background: #000;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.page .calendar-list .calendar-row .calendar-nav:hover {
+  background: #ED1C24;
+}
+
+.page .calendar-list .calendar-row .calendar-nav.active {
+  background: #ED1C24;
+}
+
+.page .calendar-list .calendar-row .calendar-content {
+  background: #FAF8F8;
+  padding: 15px 5px;
+  display: none;
+}
+
+.page .calendar-list .calendar-row .calendar-content table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.page .calendar-list .calendar-row .calendar-content table tr td {
+  border-bottom: 3px solid #faf8f8;
+}
+
+.page .calendar-list .calendar-row .calendar-content table tr td:first-child {
+  padding-left: 5px;
+  width: 100px;
+}
+
+.page .calendar-list .calendar-row .calendar-content table tr.holidays td {
+  font-weight: 700;
+  background-color: #FAA61A;
+  color: #fff;
+}
+
+.page .calendar-list .calendar-row .calendar-content table tr.holidays td:last-child {
+  padding-left: 0px !important;
+}
+
+.page .calendar-list .calendar-row .calendar-content table tr.club-gradings td {
+  font-weight: 700;
+  background-color: #003CFF;
+  color: #fff;
+}
+
+.page .calendar-list .calendar-row .calendar-content table tr.competitions td {
+  font-weight: 700;
+  background-color: #009B00;
+  color: #fff;
+}
+
+.page .calendar-list .calendar-row .calendar-content table tr.TAGB td {
+  background-color: transparent;
+}
+
+.page .calendar-list .calendar-row .calendar-content table tr td {
+  vertical-align: top;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.page .calendar-list .calendar-row .calendar-content table tr td:last-child {
+  padding-left: 20px;
+}
+
+.page .grading {
+  justify-content: space-between;
+}
+
+.page .grading h3 {
+  color: #ED1C24;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.page .grading ul {
+  margin: 0;
+  padding: 0;
+}
+
+.page .grading ul li {
+  margin-bottom: 4px;
+}
+
+.page .grading ul li:before {
+  content: "";
+  width: 0;
+  height: 0;
+}
+
+.page .grading ul li a {
+  font-size: 14px;
+}
+
+.page .grading ul li a:before {
+  content: "";
+  width: 19px;
+  height: 19px;
+  margin-right: 5px;
+  background-color: #000;
+  display: inline-block;
+  position: relative;
+  top: 3px;
+  background-image: url("/images/members/download-grade-sheet-normal.jpg");
+}
+
+.page .grading ul li a:hover:before {
+  content: "";
+  width: 19px;
+  height: 19px;
+  margin-right: 5px;
+  background-color: #000;
+  display: inline-block;
+  background-image: url("/images/members/download-grade-sheet-rollover.jpg");
+  cursor: pointer;
+}
+
 .footer {
   background-image: url("/images/footer/burntwood-cannock-taekwondo-footer-red.png");
   background-position: top center;
