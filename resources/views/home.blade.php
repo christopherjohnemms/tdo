@@ -58,7 +58,12 @@
             </div>
 
             <div class="flex-container secondary-box">
-
+                <div class="childrens">
+                    <h3 class="headingPromo">Childrens Classes</h3>
+                    <a href="{{ url('/tigers') }}">
+                        <div class="tigers-bg"></div>
+                    </a>
+                </div>
                 <div class="schedule">
                     <h3 class="headingPromo">Class Schedule</h3>
                     <div class="schedule-table">
