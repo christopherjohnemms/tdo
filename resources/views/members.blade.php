@@ -285,7 +285,7 @@
             <div class="flex-container tiger-row">
                 <div class="left">
                         <h2 class="aboutHead">Grading Sheets for Burntwood & Cannock Tae Kwon Do Members</h2>
-                        <div class="grading" style="display: flex;">
+                        <div class="grading" style="display: flex; margin-top:30px;">
                             <div>
                                 <h3 >Grading Theory Sheets</h3>
                                 <ul>
@@ -293,128 +293,126 @@
                                         <a href="">10th Kup White Belt</a>
                                     </li>
                                     <li>
-                                        <a href="">9th Kup White Belt</a>
+                                        <a href="">9th Kup Yellow Stripe</a>
                                     </li>
                                     <li>
-                                        <a href="">8th Kup White Belt</a>
+                                        <a href="">8th Kup Yellow Belt</a>
                                     </li>
                                     <li>
-                                        <a href="">7th Kup White Belt</a>
+                                        <a href="">7th Kup Green Stripe</a>
                                     </li>
                                     <li>
-                                        <a href="">6th Kup White Belt</a>
+                                        <a href="">6th Kup Green Belt</a>
                                     </li>
                                     <li>
-                                        <a href="">5th Kup White Belt</a>
+                                        <a href="">5th Kup Blue Stripe</a>
                                     </li>
                                     <li>
-                                        <a href="">4th Kup White Belt</a>
+                                        <a href="">4th Kup Blue Belt</a>
                                     </li>
                                     <li>
-                                        <a href="">3rd Kup White Belt</a>
+                                        <a href="">3rd Kup Red Stripe</a>
                                     </li>
                                     <li>
-                                        <a href="">2nd Kup White Belt</a>
+                                        <a href="">2nd Kup Red Belt</a>
                                     </li>
                                 </ul>
                             </div>
 
                             <div>
-                                <h3 style="color:red;">Grading Theory Sheets</h3>
+                                <h3 style="color:red;">Tigers Grading Sheets</h3>
                                 <ul>
                                     <li>
                                         <a href="">10th Kup White Belt</a>
                                     </li>
                                     <li>
-                                        <a href="">9th Kup White Belt</a>
+                                        <a href="">9th Kup Yellow Stripe</a>
                                     </li>
                                     <li>
-                                        <a href="">8th Kup White Belt</a>
+                                        <a href="">8th Kup Yellow Belt</a>
                                     </li>
                                     <li>
-                                        <a href="">7th Kup White Belt</a>
+                                        <a href="">7th Kup Green Stripe</a>
                                     </li>
                                     <li>
-                                        <a href="">6th Kup White Belt</a>
+                                        <a href="">6th Kup Green Belt</a>
                                     </li>
                                     <li>
-                                        <a href="">5th Kup White Belt</a>
+                                        <a href="">5th Kup Blue Stripe</a>
                                     </li>
                                     <li>
-                                        <a href="">4th Kup White Belt</a>
+                                        <a href="">4th Kup Blue Belt</a>
                                     </li>
                                     <li>
-                                        <a href="">3rd Kup White Belt</a>
-                                    </li>
-                                    <li>
-                                        <a href="">2nd Kup White Belt</a>
+                                        <a href="">3rd Kup Red Stripe</a>
                                     </li>
                                 </ul>
                             </div>
 
                             <div>
-                                <h3 style="color:red;">Grading Theory Sheets</h3>
+                                <h3 style="color:red;">Pattern Sheets</h3>
                                 <ul>
                                     <li>
-                                        <a href="">10th Kup White Belt</a>
+                                        <a href="">Chon-Ji Pattern</a>
                                     </li>
                                     <li>
-                                        <a href="">9th Kup White Belt</a>
+                                        <a href="">Dan-Gun Pattern</a>
                                     </li>
                                     <li>
-                                        <a href="">8th Kup White Belt</a>
+                                        <a href="">Do-San Pattern</a>
                                     </li>
                                     <li>
-                                        <a href="">7th Kup White Belt</a>
+                                        <a href="">Won-Hyo Pattern</a>
                                     </li>
                                     <li>
-                                        <a href="">6th Kup White Belt</a>
+                                        <a href="">Yul-Gok Pattern</a>
                                     </li>
                                     <li>
-                                        <a href="">5th Kup White Belt</a>
+                                        <a href="">Joong-Gun Pattern</a>
                                     </li>
                                     <li>
-                                        <a href="">4th Kup White Belt</a>
+                                        <a href="">Toi-Gye Pattern</a>
                                     </li>
                                     <li>
-                                        <a href="">3rd Kup White Belt</a>
+                                        <a href="">Hwa-Rang Pattern</a>
                                     </li>
                                     <li>
-                                        <a href="">2nd Kup White Belt</a>
+                                        <a href="">Choong-Moo Pattern</a>
                                     </li>
                                 </ul>
                             </div>
 
                             <div>
-                                <h3 style="color:red;">Grading Theory Sheets</h3>
+                                <h3 style="color:red;">Black Belt Syllabus </h3>
                                 <ul>
                                     <li>
-                                        <a href="">10th Kup White Belt</a>
+                                        <a href="">Black Belt Syllabus Sheet 1</a>
                                     </li>
                                     <li>
-                                        <a href="">9th Kup White Belt</a>
+                                        <a href="">Black Belt Syllabus Sheet 12</a>
                                     </li>
                                     <li>
-                                        <a href="">8th Kup White Belt</a>
+                                        <a href="">Black Belt Syllabus Sheet 3</a>
                                     </li>
                                     <li>
-                                        <a href="">7th Kup White Belt</a>
+                                        <a href="">Black Belt Syllabus Sheet 4</a>
                                     </li>
                                     <li>
-                                        <a href="">6th Kup White Belt</a>
+                                        <a href="">Black Belt Syllabus Sheet 5</a>
                                     </li>
                                     <li>
-                                        <a href="">5th Kup White Belt</a>
+                                        <a href="">Black Belt Syllabus Sheet 6</a>
                                     </li>
                                     <li>
-                                        <a href="">4th Kup White Belt</a>
+                                        <a href="">Black Belt Syllabus Sheet 7</a>
                                     </li>
                                     <li>
-                                        <a href="">3rd Kup White Belt</a>
+                                        <a href="">Black Belt Syllabus Sheet 8</a>
                                     </li>
                                     <li>
-                                        <a href="">2nd Kup White Belt</a>
+                                        <a href="">Black Belt Syllabus Sheet 91</a>
                                     </li>
+
                                 </ul>
                             </div>
                         </div>
@@ -428,6 +426,7 @@
 @endsection
 
 @section('scripts')
+
     <script>
         $('.home-slider').slick({
             infinite: true,

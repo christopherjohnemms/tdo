@@ -40,6 +40,10 @@ Route::get('/contact', function () {
 Route::get('/members', function () {
     return view('members');
 });
+Route::get('/gallery', function () {
+    return view('gallery');
+});
+
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia\Inertia::render('Dashboard');
