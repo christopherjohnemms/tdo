@@ -3044,6 +3044,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 
 
 
@@ -4226,6 +4231,211 @@ __webpack_require__.r(__webpack_exports__);
       }).then(function () {
         _this2.photoPreview = null;
       });
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/sections.vue?vue&type=script&lang=js&":
+/*!**************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/sections.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Layouts_AppLayout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../Layouts/AppLayout */ "./resources/js/Layouts/AppLayout.vue");
+/* harmony import */ var _Jetstream_Welcome__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../Jetstream/Welcome */ "./resources/js/Jetstream/Welcome.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  components: {
+    AppLayout: _Layouts_AppLayout__WEBPACK_IMPORTED_MODULE_0__["default"],
+    Welcome: _Jetstream_Welcome__WEBPACK_IMPORTED_MODULE_1__["default"]
+  },
+  props: ['data', 'homedata', 'errors'],
+  data: function data() {
+    return {
+      editMode: false,
+      isOpen: false,
+      form: {
+        page: null,
+        section_title: null,
+        body: null
+      }
+    };
+  },
+  methods: {
+    openModal: function openModal() {
+      this.isOpen = true;
+    },
+    closeModal: function closeModal() {
+      this.isOpen = false;
+      this.reset();
+      this.editMode = false;
+    },
+    reset: function reset() {
+      this.form = {
+        page: null,
+        section_title: null,
+        body: null
+      };
+    },
+    save: function save(data) {
+      this.$inertia.post('/sections', data);
+      this.reset();
+      this.closeModal();
+      this.editMode = false;
+    },
+    edit: function edit(data) {
+      this.form = Object.assign({}, data);
+      this.editMode = true;
+      this.openModal();
+    },
+    update: function update(data) {
+      data._method = 'PUT';
+      this.$inertia.post('/sections/' + data.id, data);
+      this.reset();
+      this.closeModal();
+    },
+    deleteRow: function deleteRow(data) {
+      if (!confirm('Are you sure want to remove?')) return;
+      data._method = 'DELETE';
+      this.$inertia.post('/sections/' + data.id, data);
+      this.reset();
+      this.closeModal();
     }
   }
 });
@@ -45785,7 +45995,7 @@ var render = function() {
         _vm._v(" "),
         _c("div", { staticClass: "mt-8 text-2xl" }, [
           _vm._v(
-            "\n            Welcome to your Jetstream application!\n        "
+            "\n            Welcome to your Jetstream application!!!!\n        "
           )
         ]),
         _vm._v(" "),
@@ -46155,6 +46365,21 @@ var render = function() {
                     [
                       _vm._v(
                         "\n                            Dashboard\n                        "
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "jet-nav-link",
+                    {
+                      attrs: {
+                        href: _vm.route("sections.index"),
+                        active: _vm.route().current("sections.index")
+                      }
+                    },
+                    [
+                      _vm._v(
+                        "\n                            Edit Content\n                        "
                       )
                     ]
                   )
@@ -48808,6 +49033,538 @@ var render = function() {
       }
     ])
   })
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/sections.vue?vue&type=template&id=27de09b7&":
+/*!******************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/sections.vue?vue&type=template&id=27de09b7& ***!
+  \******************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "app-layout",
+    {
+      scopedSlots: _vm._u([
+        {
+          key: "header",
+          fn: function() {
+            return [
+              _c(
+                "h2",
+                {
+                  staticClass:
+                    "font-semibold text-xl text-gray-800 leading-tight"
+                },
+                [_vm._v("\n                Manage Sections\n            ")]
+              )
+            ]
+          },
+          proxy: true
+        }
+      ])
+    },
+    [
+      _vm._v(" "),
+      _c("div", { staticClass: "py-12" }, [
+        _c("div", { staticClass: "max-w-7xl mx-auto sm:px-6 lg:px-8" }, [
+          _c(
+            "div",
+            {
+              staticClass:
+                "bg-white overflow-hidden shadow-xl sm:rounded-lg px-4 py-4"
+            },
+            [
+              _vm.$page.flash.message
+                ? _c(
+                    "div",
+                    {
+                      staticClass:
+                        "bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md my-3",
+                      attrs: { role: "alert" }
+                    },
+                    [
+                      _c("div", { staticClass: "flex" }, [
+                        _c("div", [
+                          _c("p", { staticClass: "text-sm" }, [
+                            _vm._v(_vm._s(_vm.$page.flash.message))
+                          ])
+                        ])
+                      ])
+                    ]
+                  )
+                : _vm._e(),
+              _vm._v(" "),
+              _c(
+                "button",
+                {
+                  staticClass:
+                    "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded my-3",
+                  on: {
+                    click: function($event) {
+                      return _vm.openModal()
+                    }
+                  }
+                },
+                [_vm._v("Create New Section")]
+              ),
+              _vm._v(" "),
+              _c(
+                "h2",
+                { staticClass: "text-lg font-semibold underline mt-10 mb-5" },
+                [_vm._v("Home Page")]
+              ),
+              _vm._v(" "),
+              _c("table", { staticClass: "table-fixed w-full my-1" }, [
+                _c("thead", [
+                  _c("tr", { staticClass: "bg-gray-100" }, [
+                    _c("th", { staticClass: "px-4 py-2 w-20" }, [
+                      _vm._v("ID.")
+                    ]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-4 py-2" }, [_vm._v("Page")]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-4 py-2" }, [
+                      _vm._v("Section Title")
+                    ]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-4 py-2" }, [_vm._v("Body")]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-4 py-2" }, [_vm._v("Action")])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c(
+                  "tbody",
+                  _vm._l(_vm.homedata, function(row) {
+                    return _c("tr", [
+                      _c("td", { staticClass: "border px-4 py-2" }, [
+                        _vm._v(_vm._s(row.id))
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "border px-4 py-2" }, [
+                        _vm._v(_vm._s(row.page))
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "border px-4 py-2" }, [
+                        _vm._v(_vm._s(row.section_title))
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "border px-4 py-2" }, [
+                        _vm._v(_vm._s(row.body))
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "border px-4 py-2" }, [
+                        _c(
+                          "button",
+                          {
+                            staticClass:
+                              "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded",
+                            on: {
+                              click: function($event) {
+                                return _vm.edit(row)
+                              }
+                            }
+                          },
+                          [_vm._v("Edit")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "button",
+                          {
+                            staticClass:
+                              "bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded",
+                            on: {
+                              click: function($event) {
+                                return _vm.deleteRow(row)
+                              }
+                            }
+                          },
+                          [_vm._v("Delete")]
+                        )
+                      ])
+                    ])
+                  }),
+                  0
+                )
+              ]),
+              _vm._v(" "),
+              _vm.isOpen
+                ? _c(
+                    "div",
+                    {
+                      staticClass:
+                        "fixed z-10 inset-0 overflow-y-auto ease-out duration-400"
+                    },
+                    [
+                      _c(
+                        "div",
+                        {
+                          staticClass:
+                            "flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0"
+                        },
+                        [
+                          _c(
+                            "div",
+                            { staticClass: "fixed inset-0 transition-opacity" },
+                            [
+                              _c("div", {
+                                staticClass:
+                                  "absolute inset-0 bg-gray-500 opacity-75"
+                              })
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c("span", {
+                            staticClass:
+                              "hidden sm:inline-block sm:align-middle sm:h-screen"
+                          }),
+                          _vm._v("​\n                            "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full",
+                              attrs: {
+                                role: "dialog",
+                                "aria-modal": "true",
+                                "aria-labelledby": "modal-headline"
+                              }
+                            },
+                            [
+                              _c("form", [
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass:
+                                      "bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4"
+                                  },
+                                  [
+                                    _c("div", {}, [
+                                      _c("div", { staticClass: "mb-4" }, [
+                                        _c(
+                                          "label",
+                                          {
+                                            staticClass:
+                                              "block text-gray-700 text-sm font-bold mb-2",
+                                            attrs: {
+                                              for: "exampleFormControlInput1"
+                                            }
+                                          },
+                                          [_vm._v("Page:")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c("input", {
+                                          directives: [
+                                            {
+                                              name: "model",
+                                              rawName: "v-model",
+                                              value: _vm.form.page,
+                                              expression: "form.page"
+                                            }
+                                          ],
+                                          staticClass:
+                                            "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
+                                          attrs: {
+                                            type: "text",
+                                            id: "exampleFormControlInput0",
+                                            placeholder: "Enter Title"
+                                          },
+                                          domProps: { value: _vm.form.page },
+                                          on: {
+                                            input: function($event) {
+                                              if ($event.target.composing) {
+                                                return
+                                              }
+                                              _vm.$set(
+                                                _vm.form,
+                                                "page",
+                                                $event.target.value
+                                              )
+                                            }
+                                          }
+                                        }),
+                                        _vm._v(" "),
+                                        _vm.$page.errors.page
+                                          ? _c(
+                                              "div",
+                                              { staticClass: "text-red-500" },
+                                              [
+                                                _vm._v(
+                                                  _vm._s(
+                                                    _vm.$page.errors.page[0]
+                                                  )
+                                                )
+                                              ]
+                                            )
+                                          : _vm._e()
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("div", { staticClass: "mb-4" }, [
+                                        _c(
+                                          "label",
+                                          {
+                                            staticClass:
+                                              "block text-gray-700 text-sm font-bold mb-2",
+                                            attrs: {
+                                              for: "exampleFormControlInput1"
+                                            }
+                                          },
+                                          [_vm._v("Section Title:")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c("input", {
+                                          directives: [
+                                            {
+                                              name: "model",
+                                              rawName: "v-model",
+                                              value: _vm.form.section_title,
+                                              expression: "form.section_title"
+                                            }
+                                          ],
+                                          staticClass:
+                                            "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
+                                          attrs: {
+                                            type: "text",
+                                            id: "exampleFormControlInput1",
+                                            placeholder: "Enter Title"
+                                          },
+                                          domProps: {
+                                            value: _vm.form.section_title
+                                          },
+                                          on: {
+                                            input: function($event) {
+                                              if ($event.target.composing) {
+                                                return
+                                              }
+                                              _vm.$set(
+                                                _vm.form,
+                                                "section_title",
+                                                $event.target.value
+                                              )
+                                            }
+                                          }
+                                        }),
+                                        _vm._v(" "),
+                                        _vm.$page.errors.section_title
+                                          ? _c(
+                                              "div",
+                                              { staticClass: "text-red-500" },
+                                              [
+                                                _vm._v(
+                                                  _vm._s(
+                                                    _vm.$page.errors
+                                                      .section_title[0]
+                                                  )
+                                                )
+                                              ]
+                                            )
+                                          : _vm._e()
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("div", { staticClass: "mb-4" }, [
+                                        _c(
+                                          "label",
+                                          {
+                                            staticClass:
+                                              "block text-gray-700 text-sm font-bold mb-2",
+                                            attrs: {
+                                              for: "exampleFormControlInput2"
+                                            }
+                                          },
+                                          [_vm._v("Body:")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c("textarea", {
+                                          directives: [
+                                            {
+                                              name: "model",
+                                              rawName: "v-model",
+                                              value: _vm.form.body,
+                                              expression: "form.body"
+                                            }
+                                          ],
+                                          staticClass:
+                                            "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
+                                          attrs: {
+                                            id: "exampleFormControlInput2",
+                                            placeholder: "Enter Body"
+                                          },
+                                          domProps: { value: _vm.form.body },
+                                          on: {
+                                            input: function($event) {
+                                              if ($event.target.composing) {
+                                                return
+                                              }
+                                              _vm.$set(
+                                                _vm.form,
+                                                "body",
+                                                $event.target.value
+                                              )
+                                            }
+                                          }
+                                        }),
+                                        _vm._v(" "),
+                                        _vm.$page.errors.body
+                                          ? _c(
+                                              "div",
+                                              { staticClass: "text-red-500" },
+                                              [
+                                                _vm._v(
+                                                  _vm._s(
+                                                    _vm.$page.errors.body[0]
+                                                  )
+                                                )
+                                              ]
+                                            )
+                                          : _vm._e()
+                                      ])
+                                    ])
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass:
+                                      "bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse"
+                                  },
+                                  [
+                                    _c(
+                                      "span",
+                                      {
+                                        staticClass:
+                                          "flex w-full rounded-md shadow-sm sm:ml-3 sm:w-auto"
+                                      },
+                                      [
+                                        _c(
+                                          "button",
+                                          {
+                                            directives: [
+                                              {
+                                                name: "show",
+                                                rawName: "v-show",
+                                                value: !_vm.editMode,
+                                                expression: "!editMode"
+                                              }
+                                            ],
+                                            staticClass:
+                                              "inline-flex justify-center w-full rounded-md border border-transparent px-4 py-2 bg-green-600 text-base leading-6 font-medium text-white shadow-sm hover:bg-green-500 focus:outline-none focus:border-green-700 focus:shadow-outline-green transition ease-in-out duration-150 sm:text-sm sm:leading-5",
+                                            attrs: {
+                                              "wire:click.prevent": "store()",
+                                              type: "button"
+                                            },
+                                            on: {
+                                              click: function($event) {
+                                                return _vm.save(_vm.form)
+                                              }
+                                            }
+                                          },
+                                          [
+                                            _vm._v(
+                                              "\n                                Save\n                              "
+                                            )
+                                          ]
+                                        )
+                                      ]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "span",
+                                      {
+                                        staticClass:
+                                          "flex w-full rounded-md shadow-sm sm:ml-3 sm:w-auto"
+                                      },
+                                      [
+                                        _c(
+                                          "button",
+                                          {
+                                            directives: [
+                                              {
+                                                name: "show",
+                                                rawName: "v-show",
+                                                value: _vm.editMode,
+                                                expression: "editMode"
+                                              }
+                                            ],
+                                            staticClass:
+                                              "inline-flex justify-center w-full rounded-md border border-transparent px-4 py-2 bg-green-600 text-base leading-6 font-medium text-white shadow-sm hover:bg-green-500 focus:outline-none focus:border-green-700 focus:shadow-outline-green transition ease-in-out duration-150 sm:text-sm sm:leading-5",
+                                            attrs: {
+                                              "wire:click.prevent": "store()",
+                                              type: "button"
+                                            },
+                                            on: {
+                                              click: function($event) {
+                                                return _vm.update(_vm.form)
+                                              }
+                                            }
+                                          },
+                                          [
+                                            _vm._v(
+                                              "\n                                Update\n                              "
+                                            )
+                                          ]
+                                        )
+                                      ]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "span",
+                                      {
+                                        staticClass:
+                                          "mt-3 flex w-full rounded-md shadow-sm sm:mt-0 sm:w-auto"
+                                      },
+                                      [
+                                        _c(
+                                          "button",
+                                          {
+                                            staticClass:
+                                              "inline-flex justify-center w-full rounded-md border border-gray-300 px-4 py-2 bg-white text-base leading-6 font-medium text-gray-700 shadow-sm hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue transition ease-in-out duration-150 sm:text-sm sm:leading-5",
+                                            attrs: { type: "button" },
+                                            on: {
+                                              click: function($event) {
+                                                return _vm.closeModal()
+                                              }
+                                            }
+                                          },
+                                          [
+                                            _vm._v(
+                                              "\n                                Cancel\n                              "
+                                            )
+                                          ]
+                                        )
+                                      ]
+                                    )
+                                  ]
+                                )
+                              ])
+                            ]
+                          )
+                        ]
+                      )
+                    ]
+                  )
+                : _vm._e()
+            ]
+          )
+        ])
+      ])
+    ]
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -62537,7 +63294,9 @@ var map = {
 	"./Profile/UpdatePasswordForm": "./resources/js/Pages/Profile/UpdatePasswordForm.vue",
 	"./Profile/UpdatePasswordForm.vue": "./resources/js/Pages/Profile/UpdatePasswordForm.vue",
 	"./Profile/UpdateProfileInformationForm": "./resources/js/Pages/Profile/UpdateProfileInformationForm.vue",
-	"./Profile/UpdateProfileInformationForm.vue": "./resources/js/Pages/Profile/UpdateProfileInformationForm.vue"
+	"./Profile/UpdateProfileInformationForm.vue": "./resources/js/Pages/Profile/UpdateProfileInformationForm.vue",
+	"./sections": "./resources/js/Pages/sections.vue",
+	"./sections.vue": "./resources/js/Pages/sections.vue"
 };
 
 
@@ -63178,6 +63937,75 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_UpdateProfileInformationForm_vue_vue_type_template_id_f38ebb82___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_UpdateProfileInformationForm_vue_vue_type_template_id_f38ebb82___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/Pages/sections.vue":
+/*!*****************************************!*\
+  !*** ./resources/js/Pages/sections.vue ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _sections_vue_vue_type_template_id_27de09b7___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sections.vue?vue&type=template&id=27de09b7& */ "./resources/js/Pages/sections.vue?vue&type=template&id=27de09b7&");
+/* harmony import */ var _sections_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./sections.vue?vue&type=script&lang=js& */ "./resources/js/Pages/sections.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _sections_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _sections_vue_vue_type_template_id_27de09b7___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _sections_vue_vue_type_template_id_27de09b7___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/Pages/sections.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/Pages/sections.vue?vue&type=script&lang=js&":
+/*!******************************************************************!*\
+  !*** ./resources/js/Pages/sections.vue?vue&type=script&lang=js& ***!
+  \******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_sections_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./sections.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/sections.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_sections_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/Pages/sections.vue?vue&type=template&id=27de09b7&":
+/*!************************************************************************!*\
+  !*** ./resources/js/Pages/sections.vue?vue&type=template&id=27de09b7& ***!
+  \************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_sections_vue_vue_type_template_id_27de09b7___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./sections.vue?vue&type=template&id=27de09b7& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/sections.vue?vue&type=template&id=27de09b7&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_sections_vue_vue_type_template_id_27de09b7___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_sections_vue_vue_type_template_id_27de09b7___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

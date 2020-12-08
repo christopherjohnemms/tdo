@@ -25,8 +25,13 @@
             <div class="flex-container">
                 <div class="left">
                     <h1>
-                        Welcome to Burntwood
-                        and Cannock Tae Kwon Do
+{{--                        Welcome to Burntwood--}}
+{{--                        and Cannock Tae Kwon Do--}}
+                        @foreach ($data as $d)
+                            @if ($d->section_title == 'home_title')
+                                {{ $d->body }}
+                            @endif
+                        @endforeach
                     </h1>
                     <ul>
                         <li>
@@ -56,7 +61,6 @@
                     <img src="{{ url('images/home/sean-hardwick-kicking-pose.jpg') }}" alt=""/>
                 </div>
             </div>
-
             <div class="flex-container secondary-box">
                 <div class="childrens">
                     <h3 class="headingPromo">Childrens Classes</h3>

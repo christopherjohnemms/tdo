@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SectionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,7 +15,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $data = \App\Models\Section::where('page','home')->get();
+    return view('home')->with('data', $data);
 });
 
 Route::get('/tigers', function () {
@@ -44,6 +46,8 @@ Route::get('/gallery', function () {
     return view('gallery');
 });
 
+
+Route::resource('sections', SectionController::class);
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia\Inertia::render('Dashboard');

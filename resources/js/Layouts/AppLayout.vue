@@ -17,7 +17,12 @@
                             <jet-nav-link :href="route('dashboard')" :active="route().current('dashboard')">
                                 Dashboard
                             </jet-nav-link>
+
+                            <jet-nav-link :href="route('sections.index')" :active="route().current('sections.index')">
+                                Edit Content
+                            </jet-nav-link>
                         </div>
+
                     </div>
 
                     <!-- Settings Dropdown -->
