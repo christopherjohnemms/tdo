@@ -551,7 +551,7 @@ body{
                                 }
                             }
                         }
-                        &.club-gradings{
+                        &.club-gradings, &.club_gradings{
                             td{
                                 font-weight:700;
                                 background-color: #003CFF;
@@ -565,7 +565,7 @@ body{
                                 color:#fff;
                             }
                         }
-                        &.TAGB{
+                        &.TAGB, &.tagb_courses{
                             td{
                                 background-color: transparent;
                             }

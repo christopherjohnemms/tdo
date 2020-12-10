@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\EventController;
+use App\Models\Event;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SectionController;
 
@@ -40,7 +42,34 @@ Route::get('/contact', function () {
 });
 
 Route::get('/members', function () {
-    return view('members');
+
+    $january = Event::where('month','january')->get();
+    $february = Event::where('month','february')->get();
+    $march = Event::where('month','march')->get();
+    $april = Event::where('month','april')->get();
+    $may = Event::where('month','may')->get();
+    $june = Event::where('month','june')->get();
+    $july = Event::where('month','july')->get();
+    $august = Event::where('month','august')->get();
+    $september = Event::where('month','september')->get();
+    $october = Event::where('month','october')->get();
+    $november = Event::where('month','november')->get();
+    $december = Event::where('month','december')->get();
+
+    return view('members', [
+        'january' => $january,
+        'february' => $february,
+        'march' => $march,
+        'april' => $april,
+        'may' => $may,
+        'june' => $june,
+        'july' => $july,
+        'august' => $august,
+        'september' => $september,
+        'october' => $october,
+        'november' => $november,
+        'december' => $december,
+    ]);
 });
 Route::get('/gallery', function () {
     return view('gallery');
@@ -48,6 +77,7 @@ Route::get('/gallery', function () {
 
 
 Route::resource('sections', SectionController::class);
+Route::resource('events', EventController::class);
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia\Inertia::render('Dashboard');

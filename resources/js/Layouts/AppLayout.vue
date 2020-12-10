@@ -18,8 +18,12 @@
                                 Dashboard
                             </jet-nav-link>
 
-                            <jet-nav-link :href="route('sections.index')" :active="route().current('sections.index')">
-                                Edit Content
+<!--                            <jet-nav-link :href="route('sections.index')" :active="route().current('sections.index')">-->
+<!--                                Edit Content-->
+<!--                            </jet-nav-link>-->
+
+                            <jet-nav-link :href="route('events.index')" :active="route().current('events.index')">
+                                Edit Events
                             </jet-nav-link>
                         </div>
 

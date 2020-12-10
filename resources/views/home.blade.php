@@ -25,13 +25,8 @@
             <div class="flex-container">
                 <div class="left">
                     <h1>
-{{--                        Welcome to Burntwood--}}
-{{--                        and Cannock Tae Kwon Do--}}
-                        @foreach ($data as $d)
-                            @if ($d->section_title == 'home_title')
-                                {{ $d->body }}
-                            @endif
-                        @endforeach
+                        Welcome to Burntwood
+                        and Cannock Tae Kwon Do
                     </h1>
                     <ul>
                         <li>

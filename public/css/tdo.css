@@ -591,7 +591,8 @@ body {
   padding-left: 0px !important;
 }
 
-.page .calendar-list .calendar-row .calendar-content table tr.club-gradings td {
+.page .calendar-list .calendar-row .calendar-content table tr.club-gradings td,
+.page .calendar-list .calendar-row .calendar-content table tr.club_gradings td {
   font-weight: 700;
   background-color: #003CFF;
   color: #fff;
@@ -603,7 +604,8 @@ body {
   color: #fff;
 }
 
-.page .calendar-list .calendar-row .calendar-content table tr.TAGB td {
+.page .calendar-list .calendar-row .calendar-content table tr.TAGB td,
+.page .calendar-list .calendar-row .calendar-content table tr.tagb_courses td {
   background-color: transparent;
 }
 

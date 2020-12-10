@@ -3049,6 +3049,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 
 
 
@@ -4231,6 +4235,531 @@ __webpack_require__.r(__webpack_exports__);
       }).then(function () {
         _this2.photoPreview = null;
       });
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/events.vue?vue&type=script&lang=js&":
+/*!************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/events.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Layouts_AppLayout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../Layouts/AppLayout */ "./resources/js/Layouts/AppLayout.vue");
+/* harmony import */ var _Jetstream_Welcome__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../Jetstream/Welcome */ "./resources/js/Jetstream/Welcome.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  components: {
+    AppLayout: _Layouts_AppLayout__WEBPACK_IMPORTED_MODULE_0__["default"],
+    Welcome: _Jetstream_Welcome__WEBPACK_IMPORTED_MODULE_1__["default"]
+  },
+  props: ['data', 'january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december', 'errors'],
+  data: function data() {
+    return {
+      editMode: false,
+      isOpen: false,
+      form: {
+        type: null,
+        day: null,
+        month: null,
+        event_title: null,
+        event_location: null
+      }
+    };
+  },
+  methods: {
+    openModal: function openModal() {
+      this.isOpen = true;
+    },
+    closeModal: function closeModal() {
+      this.isOpen = false;
+      this.reset();
+      this.editMode = false;
+    },
+    reset: function reset() {
+      this.form = {
+        type: null,
+        day: null,
+        month: null,
+        event_title: null,
+        event_location: null
+      };
+    },
+    save: function save(data) {
+      this.$inertia.post('/events', data);
+      this.reset();
+      this.closeModal();
+      this.editMode = false;
+    },
+    edit: function edit(data) {
+      this.form = Object.assign({}, data);
+      this.editMode = true;
+      this.openModal();
+    },
+    update: function update(data) {
+      data._method = 'PUT';
+      this.$inertia.post('/events/' + data.id, data);
+      this.reset();
+      this.closeModal();
+    },
+    deleteRow: function deleteRow(data) {
+      if (!confirm('Are you sure want to remove?')) return;
+      data._method = 'DELETE';
+      this.$inertia.post('/events/' + data.id, data);
+      this.reset();
+      this.closeModal();
+    },
+    camelize: function camelize(dasherizedStr) {
+      return dasherizedStr.split('_').join(' ');
     }
   }
 });
@@ -46364,7 +46893,7 @@ var render = function() {
                     },
                     [
                       _vm._v(
-                        "\n                            Dashboard\n                        "
+                        "\n                                Dashboard\n                            "
                       )
                     ]
                   ),
@@ -46373,13 +46902,13 @@ var render = function() {
                     "jet-nav-link",
                     {
                       attrs: {
-                        href: _vm.route("sections.index"),
-                        active: _vm.route().current("sections.index")
+                        href: _vm.route("events.index"),
+                        active: _vm.route().current("events.index")
                       }
                     },
                     [
                       _vm._v(
-                        "\n                            Edit Content\n                        "
+                        "\n                                Edit Events\n                            "
                       )
                     ]
                   )
@@ -46473,7 +47002,7 @@ var render = function() {
                                 },
                                 [
                                   _vm._v(
-                                    "\n                                    Manage Account\n                                "
+                                    "\n                                        Manage Account\n                                    "
                                   )
                                 ]
                               ),
@@ -46483,7 +47012,7 @@ var render = function() {
                                 { attrs: { href: _vm.route("profile.show") } },
                                 [
                                   _vm._v(
-                                    "\n                                    Profile\n                                "
+                                    "\n                                        Profile\n                                    "
                                   )
                                 ]
                               ),
@@ -46498,7 +47027,7 @@ var render = function() {
                                     },
                                     [
                                       _vm._v(
-                                        "\n                                    API Tokens\n                                "
+                                        "\n                                        API Tokens\n                                    "
                                       )
                                     ]
                                   )
@@ -46518,7 +47047,7 @@ var render = function() {
                                       },
                                       [
                                         _vm._v(
-                                          "\n                                        Manage Team\n                                    "
+                                          "\n                                            Manage Team\n                                        "
                                         )
                                       ]
                                     ),
@@ -46535,7 +47064,7 @@ var render = function() {
                                       },
                                       [
                                         _vm._v(
-                                          "\n                                        Team Settings\n                                    "
+                                          "\n                                            Team Settings\n                                        "
                                         )
                                       ]
                                     ),
@@ -46550,7 +47079,7 @@ var render = function() {
                                           },
                                           [
                                             _vm._v(
-                                              "\n                                        Create New Team\n                                    "
+                                              "\n                                            Create New Team\n                                        "
                                             )
                                           ]
                                         )
@@ -46568,7 +47097,7 @@ var render = function() {
                                       },
                                       [
                                         _vm._v(
-                                          "\n                                        Switch Teams\n                                    "
+                                          "\n                                            Switch Teams\n                                        "
                                         )
                                       ]
                                     ),
@@ -46668,7 +47197,7 @@ var render = function() {
                                     { attrs: { as: "button" } },
                                     [
                                       _vm._v(
-                                        "\n                                        Logout\n                                    "
+                                        "\n                                            Logout\n                                        "
                                       )
                                     ]
                                   )
@@ -46766,7 +47295,11 @@ var render = function() {
                       active: _vm.route().current("dashboard")
                     }
                   },
-                  [_vm._v("\n                    Dashboard\n                ")]
+                  [
+                    _vm._v(
+                      "\n                        Dashboard\n                    "
+                    )
+                  ]
                 )
               ],
               1
@@ -46813,7 +47346,7 @@ var render = function() {
                     },
                     [
                       _vm._v(
-                        "\n                        Profile\n                    "
+                        "\n                            Profile\n                        "
                       )
                     ]
                   ),
@@ -46829,7 +47362,7 @@ var render = function() {
                         },
                         [
                           _vm._v(
-                            "\n                        API Tokens\n                    "
+                            "\n                            API Tokens\n                        "
                           )
                         ]
                       )
@@ -46852,7 +47385,7 @@ var render = function() {
                         { attrs: { as: "button" } },
                         [
                           _vm._v(
-                            "\n                            Logout\n                        "
+                            "\n                                Logout\n                            "
                           )
                         ]
                       )
@@ -46871,7 +47404,7 @@ var render = function() {
                           },
                           [
                             _vm._v(
-                              "\n                            Manage Team\n                        "
+                              "\n                                Manage Team\n                            "
                             )
                           ]
                         ),
@@ -46889,7 +47422,7 @@ var render = function() {
                           },
                           [
                             _vm._v(
-                              "\n                            Team Settings\n                        "
+                              "\n                                Team Settings\n                            "
                             )
                           ]
                         ),
@@ -46904,7 +47437,7 @@ var render = function() {
                           },
                           [
                             _vm._v(
-                              "\n                            Create New Team\n                        "
+                              "\n                                Create New Team\n                            "
                             )
                           ]
                         ),
@@ -46918,7 +47451,7 @@ var render = function() {
                           },
                           [
                             _vm._v(
-                              "\n                            Switch Teams\n                        "
+                              "\n                                Switch Teams\n                            "
                             )
                           ]
                         ),
@@ -49033,6 +49566,1799 @@ var render = function() {
       }
     ])
   })
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/events.vue?vue&type=template&id=2f656762&":
+/*!****************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/events.vue?vue&type=template&id=2f656762& ***!
+  \****************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "app-layout",
+    {
+      scopedSlots: _vm._u([
+        {
+          key: "header",
+          fn: function() {
+            return [
+              _c(
+                "h2",
+                {
+                  staticClass:
+                    "font-semibold text-xl text-gray-800 leading-tight"
+                },
+                [_vm._v("\n                Manage Events\n            ")]
+              )
+            ]
+          },
+          proxy: true
+        }
+      ])
+    },
+    [
+      _vm._v(" "),
+      _c("div", { staticClass: "py-12" }, [
+        _c("div", { staticClass: "max-w-7xl mx-auto sm:px-6 lg:px-8" }, [
+          _c(
+            "div",
+            {
+              staticClass:
+                "bg-white overflow-hidden shadow-xl sm:rounded-lg px-4 py-4"
+            },
+            [
+              _vm.$page.flash.message
+                ? _c(
+                    "div",
+                    {
+                      staticClass:
+                        "bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md my-3",
+                      attrs: { role: "alert" }
+                    },
+                    [
+                      _c("div", { staticClass: "flex" }, [
+                        _c("div", [
+                          _c("p", { staticClass: "text-sm" }, [
+                            _vm._v(_vm._s(_vm.$page.flash.message))
+                          ])
+                        ])
+                      ])
+                    ]
+                  )
+                : _vm._e(),
+              _vm._v(" "),
+              _c(
+                "button",
+                {
+                  staticClass:
+                    "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded my-3",
+                  on: {
+                    click: function($event) {
+                      return _vm.openModal()
+                    }
+                  }
+                },
+                [_vm._v("Create New Event")]
+              ),
+              _vm._v(" "),
+              _c(
+                "h2",
+                { staticClass: "text-lg font-semibold underline mt-10 mb-5" },
+                [_vm._v("January")]
+              ),
+              _vm._v(" "),
+              _c("table", { staticClass: "table-fixed w-full my-1" }, [
+                _c("thead", [
+                  _c("tr", { staticClass: "bg-gray-100" }, [
+                    _c("th", { staticClass: "px-4 py-2" }, [_vm._v("Type")]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-4 py-2" }, [_vm._v("Day")]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-4 py-2" }, [
+                      _vm._v("Event Name")
+                    ]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-4 py-2" }, [
+                      _vm._v("Event Location")
+                    ]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-4 py-2" }, [_vm._v("Action")])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c(
+                  "tbody",
+                  _vm._l(_vm.january, function(row) {
+                    return _c("tr", [
+                      _c(
+                        "td",
+                        {
+                          staticClass: "border px-4 py-2",
+                          staticStyle: { "text-transform": "capitalize" }
+                        },
+                        [_vm._v(_vm._s(_vm.camelize(row.type)))]
+                      ),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "border px-4 py-2" }, [
+                        _vm._v(_vm._s(row.day))
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "border px-4 py-2" }, [
+                        _vm._v(_vm._s(row.event_title))
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "border px-4 py-2" }, [
+                        _vm._v(_vm._s(row.event_location))
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "border px-4 py-2" }, [
+                        _c(
+                          "button",
+                          {
+                            staticClass:
+                              "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded",
+                            on: {
+                              click: function($event) {
+                                return _vm.edit(row)
+                              }
+                            }
+                          },
+                          [_vm._v("Edit")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "button",
+                          {
+                            staticClass:
+                              "bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded",
+                            on: {
+                              click: function($event) {
+                                return _vm.deleteRow(row)
+                              }
+                            }
+                          },
+                          [_vm._v("Delete")]
+                        )
+                      ])
+                    ])
+                  }),
+                  0
+                )
+              ]),
+              _vm._v(" "),
+              _c(
+                "h2",
+                { staticClass: "text-lg font-semibold underline mt-10 mb-5" },
+                [_vm._v("February")]
+              ),
+              _vm._v(" "),
+              _c("table", { staticClass: "table-fixed w-full my-1" }, [
+                _c("thead", [
+                  _c("tr", { staticClass: "bg-gray-100" }, [
+                    _c("th", { staticClass: "px-4 py-2" }, [_vm._v("Type")]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-4 py-2" }, [_vm._v("Day")]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-4 py-2" }, [
+                      _vm._v("Event Name")
+                    ]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-4 py-2" }, [
+                      _vm._v("Event Location")
+                    ]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-4 py-2" }, [_vm._v("Action")])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c(
+                  "tbody",
+                  _vm._l(_vm.february, function(row) {
+                    return _c("tr", [
+                      _c(
+                        "td",
+                        {
+                          staticClass: "border px-4 py-2",
+                          staticStyle: { "text-transform": "capitalize" }
+                        },
+                        [_vm._v(_vm._s(_vm.camelize(row.type)))]
+                      ),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "border px-4 py-2" }, [
+                        _vm._v(_vm._s(row.day))
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "border px-4 py-2" }, [
+                        _vm._v(_vm._s(row.event_title))
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "border px-4 py-2" }, [
+                        _vm._v(_vm._s(row.event_location))
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "border px-4 py-2" }, [
+                        _c(
+                          "button",
+                          {
+                            staticClass:
+                              "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded",
+                            on: {
+                              click: function($event) {
+                                return _vm.edit(row)
+                              }
+                            }
+                          },
+                          [_vm._v("Edit")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "button",
+                          {
+                            staticClass:
+                              "bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded",
+                            on: {
+                              click: function($event) {
+                                return _vm.deleteRow(row)
+                              }
+                            }
+                          },
+                          [_vm._v("Delete")]
+                        )
+                      ])
+                    ])
+                  }),
+                  0
+                )
+              ]),
+              _vm._v(" "),
+              _c(
+                "h2",
+                { staticClass: "text-lg font-semibold underline mt-10 mb-5" },
+                [_vm._v("March")]
+              ),
+              _vm._v(" "),
+              _c("table", { staticClass: "table-fixed w-full my-1" }, [
+                _c("thead", [
+                  _c("tr", { staticClass: "bg-gray-100" }, [
+                    _c("th", { staticClass: "px-4 py-2" }, [_vm._v("Type")]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-4 py-2" }, [_vm._v("Day")]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-4 py-2" }, [
+                      _vm._v("Event Name")
+                    ]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-4 py-2" }, [
+                      _vm._v("Event Location")
+                    ]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-4 py-2" }, [_vm._v("Action")])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c(
+                  "tbody",
+                  _vm._l(_vm.march, function(row) {
+                    return _c("tr", [
+                      _c(
+                        "td",
+                        {
+                          staticClass: "border px-4 py-2",
+                          staticStyle: { "text-transform": "capitalize" }
+                        },
+                        [_vm._v(_vm._s(_vm.camelize(row.type)))]
+                      ),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "border px-4 py-2" }, [
+                        _vm._v(_vm._s(row.day))
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "border px-4 py-2" }, [
+                        _vm._v(_vm._s(row.event_title))
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "border px-4 py-2" }, [
+                        _vm._v(_vm._s(row.event_location))
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "border px-4 py-2" }, [
+                        _c(
+                          "button",
+                          {
+                            staticClass:
+                              "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded",
+                            on: {
+                              click: function($event) {
+                                return _vm.edit(row)
+                              }
+                            }
+                          },
+                          [_vm._v("Edit")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "button",
+                          {
+                            staticClass:
+                              "bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded",
+                            on: {
+                              click: function($event) {
+                                return _vm.deleteRow(row)
+                              }
+                            }
+                          },
+                          [_vm._v("Delete")]
+                        )
+                      ])
+                    ])
+                  }),
+                  0
+                )
+              ]),
+              _vm._v(" "),
+              _c(
+                "h2",
+                { staticClass: "text-lg font-semibold underline mt-10 mb-5" },
+                [_vm._v("April")]
+              ),
+              _vm._v(" "),
+              _c("table", { staticClass: "table-fixed w-full my-1" }, [
+                _c("thead", [
+                  _c("tr", { staticClass: "bg-gray-100" }, [
+                    _c("th", { staticClass: "px-4 py-2" }, [_vm._v("Type")]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-4 py-2" }, [_vm._v("Day")]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-4 py-2" }, [
+                      _vm._v("Event Name")
+                    ]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-4 py-2" }, [
+                      _vm._v("Event Location")
+                    ]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-4 py-2" }, [_vm._v("Action")])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c(
+                  "tbody",
+                  _vm._l(_vm.april, function(row) {
+                    return _c("tr", [
+                      _c(
+                        "td",
+                        {
+                          staticClass: "border px-4 py-2",
+                          staticStyle: { "text-transform": "capitalize" }
+                        },
+                        [_vm._v(_vm._s(_vm.camelize(row.type)))]
+                      ),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "border px-4 py-2" }, [
+                        _vm._v(_vm._s(row.day))
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "border px-4 py-2" }, [
+                        _vm._v(_vm._s(row.event_title))
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "border px-4 py-2" }, [
+                        _vm._v(_vm._s(row.event_location))
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "border px-4 py-2" }, [
+                        _c(
+                          "button",
+                          {
+                            staticClass:
+                              "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded",
+                            on: {
+                              click: function($event) {
+                                return _vm.edit(row)
+                              }
+                            }
+                          },
+                          [_vm._v("Edit")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "button",
+                          {
+                            staticClass:
+                              "bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded",
+                            on: {
+                              click: function($event) {
+                                return _vm.deleteRow(row)
+                              }
+                            }
+                          },
+                          [_vm._v("Delete")]
+                        )
+                      ])
+                    ])
+                  }),
+                  0
+                )
+              ]),
+              _vm._v(" "),
+              _c(
+                "h2",
+                { staticClass: "text-lg font-semibold underline mt-10 mb-5" },
+                [_vm._v("May")]
+              ),
+              _vm._v(" "),
+              _c("table", { staticClass: "table-fixed w-full my-1" }, [
+                _c("thead", [
+                  _c("tr", { staticClass: "bg-gray-100" }, [
+                    _c("th", { staticClass: "px-4 py-2" }, [_vm._v("Type")]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-4 py-2" }, [_vm._v("Day")]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-4 py-2" }, [
+                      _vm._v("Event Name")
+                    ]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-4 py-2" }, [
+                      _vm._v("Event Location")
+                    ]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-4 py-2" }, [_vm._v("Action")])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c(
+                  "tbody",
+                  _vm._l(_vm.may, function(row) {
+                    return _c("tr", [
+                      _c(
+                        "td",
+                        {
+                          staticClass: "border px-4 py-2",
+                          staticStyle: { "text-transform": "capitalize" }
+                        },
+                        [_vm._v(_vm._s(_vm.camelize(row.type)))]
+                      ),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "border px-4 py-2" }, [
+                        _vm._v(_vm._s(row.day))
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "border px-4 py-2" }, [
+                        _vm._v(_vm._s(row.event_title))
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "border px-4 py-2" }, [
+                        _vm._v(_vm._s(row.event_location))
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "border px-4 py-2" }, [
+                        _c(
+                          "button",
+                          {
+                            staticClass:
+                              "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded",
+                            on: {
+                              click: function($event) {
+                                return _vm.edit(row)
+                              }
+                            }
+                          },
+                          [_vm._v("Edit")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "button",
+                          {
+                            staticClass:
+                              "bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded",
+                            on: {
+                              click: function($event) {
+                                return _vm.deleteRow(row)
+                              }
+                            }
+                          },
+                          [_vm._v("Delete")]
+                        )
+                      ])
+                    ])
+                  }),
+                  0
+                )
+              ]),
+              _vm._v(" "),
+              _c(
+                "h2",
+                { staticClass: "text-lg font-semibold underline mt-10 mb-5" },
+                [_vm._v("June")]
+              ),
+              _vm._v(" "),
+              _c("table", { staticClass: "table-fixed w-full my-1" }, [
+                _c("thead", [
+                  _c("tr", { staticClass: "bg-gray-100" }, [
+                    _c("th", { staticClass: "px-4 py-2" }, [_vm._v("Type")]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-4 py-2" }, [_vm._v("Day")]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-4 py-2" }, [
+                      _vm._v("Event Name")
+                    ]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-4 py-2" }, [
+                      _vm._v("Event Location")
+                    ]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-4 py-2" }, [_vm._v("Action")])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c(
+                  "tbody",
+                  _vm._l(_vm.june, function(row) {
+                    return _c("tr", [
+                      _c(
+                        "td",
+                        {
+                          staticClass: "border px-4 py-2",
+                          staticStyle: { "text-transform": "capitalize" }
+                        },
+                        [_vm._v(_vm._s(_vm.camelize(row.type)))]
+                      ),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "border px-4 py-2" }, [
+                        _vm._v(_vm._s(row.day))
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "border px-4 py-2" }, [
+                        _vm._v(_vm._s(row.event_title))
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "border px-4 py-2" }, [
+                        _vm._v(_vm._s(row.event_location))
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "border px-4 py-2" }, [
+                        _c(
+                          "button",
+                          {
+                            staticClass:
+                              "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded",
+                            on: {
+                              click: function($event) {
+                                return _vm.edit(row)
+                              }
+                            }
+                          },
+                          [_vm._v("Edit")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "button",
+                          {
+                            staticClass:
+                              "bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded",
+                            on: {
+                              click: function($event) {
+                                return _vm.deleteRow(row)
+                              }
+                            }
+                          },
+                          [_vm._v("Delete")]
+                        )
+                      ])
+                    ])
+                  }),
+                  0
+                )
+              ]),
+              _vm._v(" "),
+              _c(
+                "h2",
+                { staticClass: "text-lg font-semibold underline mt-10 mb-5" },
+                [_vm._v("July")]
+              ),
+              _vm._v(" "),
+              _c("table", { staticClass: "table-fixed w-full my-1" }, [
+                _c("thead", [
+                  _c("tr", { staticClass: "bg-gray-100" }, [
+                    _c("th", { staticClass: "px-4 py-2" }, [_vm._v("Type")]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-4 py-2" }, [_vm._v("Day")]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-4 py-2" }, [
+                      _vm._v("Event Name")
+                    ]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-4 py-2" }, [
+                      _vm._v("Event Location")
+                    ]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-4 py-2" }, [_vm._v("Action")])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c(
+                  "tbody",
+                  _vm._l(_vm.july, function(row) {
+                    return _c("tr", [
+                      _c(
+                        "td",
+                        {
+                          staticClass: "border px-4 py-2",
+                          staticStyle: { "text-transform": "capitalize" }
+                        },
+                        [_vm._v(_vm._s(_vm.camelize(row.type)))]
+                      ),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "border px-4 py-2" }, [
+                        _vm._v(_vm._s(row.day))
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "border px-4 py-2" }, [
+                        _vm._v(_vm._s(row.event_title))
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "border px-4 py-2" }, [
+                        _vm._v(_vm._s(row.event_location))
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "border px-4 py-2" }, [
+                        _c(
+                          "button",
+                          {
+                            staticClass:
+                              "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded",
+                            on: {
+                              click: function($event) {
+                                return _vm.edit(row)
+                              }
+                            }
+                          },
+                          [_vm._v("Edit")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "button",
+                          {
+                            staticClass:
+                              "bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded",
+                            on: {
+                              click: function($event) {
+                                return _vm.deleteRow(row)
+                              }
+                            }
+                          },
+                          [_vm._v("Delete")]
+                        )
+                      ])
+                    ])
+                  }),
+                  0
+                )
+              ]),
+              _vm._v(" "),
+              _c(
+                "h2",
+                { staticClass: "text-lg font-semibold underline mt-10 mb-5" },
+                [_vm._v("August")]
+              ),
+              _vm._v(" "),
+              _c("table", { staticClass: "table-fixed w-full my-1" }, [
+                _c("thead", [
+                  _c("tr", { staticClass: "bg-gray-100" }, [
+                    _c("th", { staticClass: "px-4 py-2" }, [_vm._v("Type")]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-4 py-2" }, [_vm._v("Day")]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-4 py-2" }, [
+                      _vm._v("Event Name")
+                    ]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-4 py-2" }, [
+                      _vm._v("Event Location")
+                    ]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-4 py-2" }, [_vm._v("Action")])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c(
+                  "tbody",
+                  _vm._l(_vm.august, function(row) {
+                    return _c("tr", [
+                      _c(
+                        "td",
+                        {
+                          staticClass: "border px-4 py-2",
+                          staticStyle: { "text-transform": "capitalize" }
+                        },
+                        [_vm._v(_vm._s(_vm.camelize(row.type)))]
+                      ),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "border px-4 py-2" }, [
+                        _vm._v(_vm._s(row.day))
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "border px-4 py-2" }, [
+                        _vm._v(_vm._s(row.event_title))
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "border px-4 py-2" }, [
+                        _vm._v(_vm._s(row.event_location))
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "border px-4 py-2" }, [
+                        _c(
+                          "button",
+                          {
+                            staticClass:
+                              "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded",
+                            on: {
+                              click: function($event) {
+                                return _vm.edit(row)
+                              }
+                            }
+                          },
+                          [_vm._v("Edit")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "button",
+                          {
+                            staticClass:
+                              "bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded",
+                            on: {
+                              click: function($event) {
+                                return _vm.deleteRow(row)
+                              }
+                            }
+                          },
+                          [_vm._v("Delete")]
+                        )
+                      ])
+                    ])
+                  }),
+                  0
+                )
+              ]),
+              _vm._v(" "),
+              _c(
+                "h2",
+                { staticClass: "text-lg font-semibold underline mt-10 mb-5" },
+                [_vm._v("September")]
+              ),
+              _vm._v(" "),
+              _c("table", { staticClass: "table-fixed w-full my-1" }, [
+                _c("thead", [
+                  _c("tr", { staticClass: "bg-gray-100" }, [
+                    _c("th", { staticClass: "px-4 py-2" }, [_vm._v("Type")]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-4 py-2" }, [_vm._v("Day")]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-4 py-2" }, [
+                      _vm._v("Event Name")
+                    ]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-4 py-2" }, [
+                      _vm._v("Event Location")
+                    ]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-4 py-2" }, [_vm._v("Action")])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c(
+                  "tbody",
+                  _vm._l(_vm.september, function(row) {
+                    return _c("tr", [
+                      _c(
+                        "td",
+                        {
+                          staticClass: "border px-4 py-2",
+                          staticStyle: { "text-transform": "capitalize" }
+                        },
+                        [_vm._v(_vm._s(_vm.camelize(row.type)))]
+                      ),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "border px-4 py-2" }, [
+                        _vm._v(_vm._s(row.day))
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "border px-4 py-2" }, [
+                        _vm._v(_vm._s(row.event_title))
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "border px-4 py-2" }, [
+                        _vm._v(_vm._s(row.event_location))
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "border px-4 py-2" }, [
+                        _c(
+                          "button",
+                          {
+                            staticClass:
+                              "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded",
+                            on: {
+                              click: function($event) {
+                                return _vm.edit(row)
+                              }
+                            }
+                          },
+                          [_vm._v("Edit")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "button",
+                          {
+                            staticClass:
+                              "bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded",
+                            on: {
+                              click: function($event) {
+                                return _vm.deleteRow(row)
+                              }
+                            }
+                          },
+                          [_vm._v("Delete")]
+                        )
+                      ])
+                    ])
+                  }),
+                  0
+                )
+              ]),
+              _vm._v(" "),
+              _c(
+                "h2",
+                { staticClass: "text-lg font-semibold underline mt-10 mb-5" },
+                [_vm._v("October")]
+              ),
+              _vm._v(" "),
+              _c("table", { staticClass: "table-fixed w-full my-1" }, [
+                _c("thead", [
+                  _c("tr", { staticClass: "bg-gray-100" }, [
+                    _c("th", { staticClass: "px-4 py-2" }, [_vm._v("Type")]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-4 py-2" }, [_vm._v("Day")]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-4 py-2" }, [
+                      _vm._v("Event Name")
+                    ]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-4 py-2" }, [
+                      _vm._v("Event Location")
+                    ]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-4 py-2" }, [_vm._v("Action")])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c(
+                  "tbody",
+                  _vm._l(_vm.october, function(row) {
+                    return _c("tr", [
+                      _c(
+                        "td",
+                        {
+                          staticClass: "border px-4 py-2",
+                          staticStyle: { "text-transform": "capitalize" }
+                        },
+                        [_vm._v(_vm._s(_vm.camelize(row.type)))]
+                      ),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "border px-4 py-2" }, [
+                        _vm._v(_vm._s(row.day))
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "border px-4 py-2" }, [
+                        _vm._v(_vm._s(row.event_title))
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "border px-4 py-2" }, [
+                        _vm._v(_vm._s(row.event_location))
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "border px-4 py-2" }, [
+                        _c(
+                          "button",
+                          {
+                            staticClass:
+                              "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded",
+                            on: {
+                              click: function($event) {
+                                return _vm.edit(row)
+                              }
+                            }
+                          },
+                          [_vm._v("Edit")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "button",
+                          {
+                            staticClass:
+                              "bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded",
+                            on: {
+                              click: function($event) {
+                                return _vm.deleteRow(row)
+                              }
+                            }
+                          },
+                          [_vm._v("Delete")]
+                        )
+                      ])
+                    ])
+                  }),
+                  0
+                )
+              ]),
+              _vm._v(" "),
+              _c(
+                "h2",
+                { staticClass: "text-lg font-semibold underline mt-10 mb-5" },
+                [_vm._v("November")]
+              ),
+              _vm._v(" "),
+              _c("table", { staticClass: "table-fixed w-full my-1" }, [
+                _c("thead", [
+                  _c("tr", { staticClass: "bg-gray-100" }, [
+                    _c("th", { staticClass: "px-4 py-2" }, [_vm._v("Type")]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-4 py-2" }, [_vm._v("Day")]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-4 py-2" }, [
+                      _vm._v("Event Name")
+                    ]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-4 py-2" }, [
+                      _vm._v("Event Location")
+                    ]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-4 py-2" }, [_vm._v("Action")])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c(
+                  "tbody",
+                  _vm._l(_vm.november, function(row) {
+                    return _c("tr", [
+                      _c(
+                        "td",
+                        {
+                          staticClass: "border px-4 py-2",
+                          staticStyle: { "text-transform": "capitalize" }
+                        },
+                        [_vm._v(_vm._s(_vm.camelize(row.type)))]
+                      ),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "border px-4 py-2" }, [
+                        _vm._v(_vm._s(row.day))
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "border px-4 py-2" }, [
+                        _vm._v(_vm._s(row.event_title))
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "border px-4 py-2" }, [
+                        _vm._v(_vm._s(row.event_location))
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "border px-4 py-2" }, [
+                        _c(
+                          "button",
+                          {
+                            staticClass:
+                              "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded",
+                            on: {
+                              click: function($event) {
+                                return _vm.edit(row)
+                              }
+                            }
+                          },
+                          [_vm._v("Edit")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "button",
+                          {
+                            staticClass:
+                              "bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded",
+                            on: {
+                              click: function($event) {
+                                return _vm.deleteRow(row)
+                              }
+                            }
+                          },
+                          [_vm._v("Delete")]
+                        )
+                      ])
+                    ])
+                  }),
+                  0
+                )
+              ]),
+              _vm._v(" "),
+              _c(
+                "h2",
+                { staticClass: "text-lg font-semibold underline mt-10 mb-5" },
+                [_vm._v("December")]
+              ),
+              _vm._v(" "),
+              _c("table", { staticClass: "table-fixed w-full my-1" }, [
+                _c("thead", [
+                  _c("tr", { staticClass: "bg-gray-100" }, [
+                    _c("th", { staticClass: "px-4 py-2" }, [_vm._v("Type")]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-4 py-2" }, [_vm._v("Day")]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-4 py-2" }, [
+                      _vm._v("Event Name")
+                    ]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-4 py-2" }, [
+                      _vm._v("Event Location")
+                    ]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-4 py-2" }, [_vm._v("Action")])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c(
+                  "tbody",
+                  _vm._l(_vm.december, function(row) {
+                    return _c("tr", [
+                      _c(
+                        "td",
+                        {
+                          staticClass: "border px-4 py-2",
+                          staticStyle: { "text-transform": "capitalize" }
+                        },
+                        [_vm._v(_vm._s(_vm.camelize(row.type)))]
+                      ),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "border px-4 py-2" }, [
+                        _vm._v(_vm._s(row.day))
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "border px-4 py-2" }, [
+                        _vm._v(_vm._s(row.event_title))
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "border px-4 py-2" }, [
+                        _vm._v(_vm._s(row.event_location))
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "border px-4 py-2" }, [
+                        _c(
+                          "button",
+                          {
+                            staticClass:
+                              "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded",
+                            on: {
+                              click: function($event) {
+                                return _vm.edit(row)
+                              }
+                            }
+                          },
+                          [_vm._v("Edit")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "button",
+                          {
+                            staticClass:
+                              "bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded",
+                            on: {
+                              click: function($event) {
+                                return _vm.deleteRow(row)
+                              }
+                            }
+                          },
+                          [_vm._v("Delete")]
+                        )
+                      ])
+                    ])
+                  }),
+                  0
+                )
+              ]),
+              _vm._v(" "),
+              _vm.isOpen
+                ? _c(
+                    "div",
+                    {
+                      staticClass:
+                        "fixed z-10 inset-0 overflow-y-auto ease-out duration-400"
+                    },
+                    [
+                      _c(
+                        "div",
+                        {
+                          staticClass:
+                            "flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0"
+                        },
+                        [
+                          _c(
+                            "div",
+                            { staticClass: "fixed inset-0 transition-opacity" },
+                            [
+                              _c("div", {
+                                staticClass:
+                                  "absolute inset-0 bg-gray-500 opacity-75"
+                              })
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c("span", {
+                            staticClass:
+                              "hidden sm:inline-block sm:align-middle sm:h-screen"
+                          }),
+                          _vm._v("​\n                            "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full",
+                              attrs: {
+                                role: "dialog",
+                                "aria-modal": "true",
+                                "aria-labelledby": "modal-headline"
+                              }
+                            },
+                            [
+                              _c("form", [
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass:
+                                      "bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4"
+                                  },
+                                  [
+                                    _c("div", {}, [
+                                      _c(
+                                        "div",
+                                        { staticClass: "flex justify-center" },
+                                        [
+                                          _c(
+                                            "div",
+                                            { staticClass: "mb-4 flex-1 " },
+                                            [
+                                              _c(
+                                                "label",
+                                                {
+                                                  staticClass:
+                                                    "block text-gray-700 text-sm font-bold mb-2",
+                                                  attrs: {
+                                                    for:
+                                                      "exampleFormControlInput0"
+                                                  }
+                                                },
+                                                [_vm._v("Type:")]
+                                              ),
+                                              _vm._v(" "),
+                                              _c(
+                                                "select",
+                                                {
+                                                  directives: [
+                                                    {
+                                                      name: "model",
+                                                      rawName: "v-model",
+                                                      value: _vm.form.type,
+                                                      expression: "form.type"
+                                                    }
+                                                  ],
+                                                  staticClass:
+                                                    "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
+                                                  attrs: {
+                                                    id:
+                                                      "exampleFormControlInput0"
+                                                  },
+                                                  on: {
+                                                    change: function($event) {
+                                                      var $$selectedVal = Array.prototype.filter
+                                                        .call(
+                                                          $event.target.options,
+                                                          function(o) {
+                                                            return o.selected
+                                                          }
+                                                        )
+                                                        .map(function(o) {
+                                                          var val =
+                                                            "_value" in o
+                                                              ? o._value
+                                                              : o.value
+                                                          return val
+                                                        })
+                                                      _vm.$set(
+                                                        _vm.form,
+                                                        "type",
+                                                        $event.target.multiple
+                                                          ? $$selectedVal
+                                                          : $$selectedVal[0]
+                                                      )
+                                                    }
+                                                  }
+                                                },
+                                                [
+                                                  _c(
+                                                    "option",
+                                                    {
+                                                      attrs: {
+                                                        value: "holidays"
+                                                      }
+                                                    },
+                                                    [_vm._v("Holidays")]
+                                                  ),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "option",
+                                                    {
+                                                      attrs: {
+                                                        value: "club_gradings"
+                                                      }
+                                                    },
+                                                    [_vm._v("Club Gradings")]
+                                                  ),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "option",
+                                                    {
+                                                      attrs: {
+                                                        value: "competitions"
+                                                      }
+                                                    },
+                                                    [_vm._v("Competitions")]
+                                                  ),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "option",
+                                                    {
+                                                      attrs: {
+                                                        value: "tagb_courses"
+                                                      }
+                                                    },
+                                                    [_vm._v("TAGB Courses")]
+                                                  )
+                                                ]
+                                              ),
+                                              _vm._v(" "),
+                                              _vm.$page.errors.type
+                                                ? _c(
+                                                    "div",
+                                                    {
+                                                      staticClass:
+                                                        "text-red-500"
+                                                    },
+                                                    [
+                                                      _vm._v(
+                                                        _vm._s(
+                                                          _vm.$page.errors
+                                                            .type[0]
+                                                        )
+                                                      )
+                                                    ]
+                                                  )
+                                                : _vm._e()
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "mb-4 ml-4 flex-1" },
+                                            [
+                                              _c(
+                                                "label",
+                                                {
+                                                  staticClass:
+                                                    "block text-gray-700 text-sm font-bold mb-2",
+                                                  attrs: {
+                                                    for:
+                                                      "exampleFormControlInput10"
+                                                  }
+                                                },
+                                                [_vm._v("Month:")]
+                                              ),
+                                              _vm._v(" "),
+                                              _c(
+                                                "select",
+                                                {
+                                                  directives: [
+                                                    {
+                                                      name: "model",
+                                                      rawName: "v-model",
+                                                      value: _vm.form.month,
+                                                      expression: "form.month"
+                                                    }
+                                                  ],
+                                                  staticClass:
+                                                    "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
+                                                  attrs: {
+                                                    id:
+                                                      "exampleFormControlInput10"
+                                                  },
+                                                  on: {
+                                                    change: function($event) {
+                                                      var $$selectedVal = Array.prototype.filter
+                                                        .call(
+                                                          $event.target.options,
+                                                          function(o) {
+                                                            return o.selected
+                                                          }
+                                                        )
+                                                        .map(function(o) {
+                                                          var val =
+                                                            "_value" in o
+                                                              ? o._value
+                                                              : o.value
+                                                          return val
+                                                        })
+                                                      _vm.$set(
+                                                        _vm.form,
+                                                        "month",
+                                                        $event.target.multiple
+                                                          ? $$selectedVal
+                                                          : $$selectedVal[0]
+                                                      )
+                                                    }
+                                                  }
+                                                },
+                                                [
+                                                  _c(
+                                                    "option",
+                                                    {
+                                                      attrs: {
+                                                        value: "january"
+                                                      }
+                                                    },
+                                                    [_vm._v("January")]
+                                                  ),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "option",
+                                                    {
+                                                      attrs: {
+                                                        value: "february"
+                                                      }
+                                                    },
+                                                    [_vm._v("February")]
+                                                  ),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "option",
+                                                    {
+                                                      attrs: { value: "march" }
+                                                    },
+                                                    [_vm._v("March")]
+                                                  ),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "option",
+                                                    {
+                                                      attrs: { value: "april" }
+                                                    },
+                                                    [_vm._v("April")]
+                                                  ),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "option",
+                                                    { attrs: { value: "may" } },
+                                                    [_vm._v("May")]
+                                                  ),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "option",
+                                                    {
+                                                      attrs: { value: "june" }
+                                                    },
+                                                    [_vm._v("June")]
+                                                  ),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "option",
+                                                    {
+                                                      attrs: { value: "july" }
+                                                    },
+                                                    [_vm._v("July")]
+                                                  ),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "option",
+                                                    {
+                                                      attrs: { value: "august" }
+                                                    },
+                                                    [_vm._v("August")]
+                                                  ),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "option",
+                                                    {
+                                                      attrs: {
+                                                        value: "september"
+                                                      }
+                                                    },
+                                                    [_vm._v("September")]
+                                                  ),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "option",
+                                                    {
+                                                      attrs: {
+                                                        value: "october"
+                                                      }
+                                                    },
+                                                    [_vm._v("October")]
+                                                  ),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "option",
+                                                    {
+                                                      attrs: {
+                                                        value: "november"
+                                                      }
+                                                    },
+                                                    [_vm._v("November")]
+                                                  ),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "option",
+                                                    {
+                                                      attrs: {
+                                                        value: "december"
+                                                      }
+                                                    },
+                                                    [_vm._v("December")]
+                                                  )
+                                                ]
+                                              ),
+                                              _vm._v(" "),
+                                              _vm.$page.errors.month
+                                                ? _c(
+                                                    "div",
+                                                    {
+                                                      staticClass:
+                                                        "text-red-500"
+                                                    },
+                                                    [
+                                                      _vm._v(
+                                                        _vm._s(
+                                                          _vm.$page.errors
+                                                            .month[0]
+                                                        )
+                                                      )
+                                                    ]
+                                                  )
+                                                : _vm._e()
+                                            ]
+                                          )
+                                        ]
+                                      ),
+                                      _vm._v(" "),
+                                      _c("div", { staticClass: "mb-4" }, [
+                                        _c(
+                                          "label",
+                                          {
+                                            staticClass:
+                                              "block text-gray-700 text-sm font-bold mb-2",
+                                            attrs: {
+                                              for: "exampleFormControlInput1"
+                                            }
+                                          },
+                                          [_vm._v("Event Day:")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c("input", {
+                                          directives: [
+                                            {
+                                              name: "model",
+                                              rawName: "v-model",
+                                              value: _vm.form.day,
+                                              expression: "form.day"
+                                            }
+                                          ],
+                                          staticClass:
+                                            "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
+                                          attrs: {
+                                            type: "text",
+                                            id: "exampleFormControlInput1",
+                                            placeholder: "Enter Day (i.e 2nd)"
+                                          },
+                                          domProps: { value: _vm.form.day },
+                                          on: {
+                                            input: function($event) {
+                                              if ($event.target.composing) {
+                                                return
+                                              }
+                                              _vm.$set(
+                                                _vm.form,
+                                                "day",
+                                                $event.target.value
+                                              )
+                                            }
+                                          }
+                                        }),
+                                        _vm._v(" "),
+                                        _vm.$page.errors.day
+                                          ? _c(
+                                              "div",
+                                              { staticClass: "text-red-500" },
+                                              [
+                                                _vm._v(
+                                                  _vm._s(
+                                                    _vm.$page.errors.day[0]
+                                                  )
+                                                )
+                                              ]
+                                            )
+                                          : _vm._e()
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("div", { staticClass: "mb-4" }, [
+                                        _c(
+                                          "label",
+                                          {
+                                            staticClass:
+                                              "block text-gray-700 text-sm font-bold mb-2",
+                                            attrs: {
+                                              for: "exampleFormControlInput2"
+                                            }
+                                          },
+                                          [_vm._v("Event Title:")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c("textarea", {
+                                          directives: [
+                                            {
+                                              name: "model",
+                                              rawName: "v-model",
+                                              value: _vm.form.event_title,
+                                              expression: "form.event_title"
+                                            }
+                                          ],
+                                          staticClass:
+                                            "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
+                                          attrs: {
+                                            id: "exampleFormControlInput2",
+                                            placeholder: "Enter Event Title"
+                                          },
+                                          domProps: {
+                                            value: _vm.form.event_title
+                                          },
+                                          on: {
+                                            input: function($event) {
+                                              if ($event.target.composing) {
+                                                return
+                                              }
+                                              _vm.$set(
+                                                _vm.form,
+                                                "event_title",
+                                                $event.target.value
+                                              )
+                                            }
+                                          }
+                                        }),
+                                        _vm._v(" "),
+                                        _vm.$page.errors.event_title
+                                          ? _c(
+                                              "div",
+                                              { staticClass: "text-red-500" },
+                                              [
+                                                _vm._v(
+                                                  _vm._s(
+                                                    _vm.$page.errors
+                                                      .event_title[0]
+                                                  )
+                                                )
+                                              ]
+                                            )
+                                          : _vm._e()
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("div", { staticClass: "mb-4" }, [
+                                        _c(
+                                          "label",
+                                          {
+                                            staticClass:
+                                              "block text-gray-700 text-sm font-bold mb-2",
+                                            attrs: {
+                                              for: "exampleFormControlInput3"
+                                            }
+                                          },
+                                          [_vm._v("Event Location:")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c("textarea", {
+                                          directives: [
+                                            {
+                                              name: "model",
+                                              rawName: "v-model",
+                                              value: _vm.form.event_location,
+                                              expression: "form.event_location"
+                                            }
+                                          ],
+                                          staticClass:
+                                            "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline",
+                                          attrs: {
+                                            id: "exampleFormControlInput3",
+                                            placeholder:
+                                              "Enter Location (Leave blank for Holidays)"
+                                          },
+                                          domProps: {
+                                            value: _vm.form.event_location
+                                          },
+                                          on: {
+                                            input: function($event) {
+                                              if ($event.target.composing) {
+                                                return
+                                              }
+                                              _vm.$set(
+                                                _vm.form,
+                                                "event_location",
+                                                $event.target.value
+                                              )
+                                            }
+                                          }
+                                        }),
+                                        _vm._v(" "),
+                                        _vm.$page.errors.event_location
+                                          ? _c(
+                                              "div",
+                                              { staticClass: "text-red-500" },
+                                              [
+                                                _vm._v(
+                                                  _vm._s(
+                                                    _vm.$page.errors
+                                                      .event_location[0]
+                                                  )
+                                                )
+                                              ]
+                                            )
+                                          : _vm._e()
+                                      ])
+                                    ])
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass:
+                                      "bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse"
+                                  },
+                                  [
+                                    _c(
+                                      "span",
+                                      {
+                                        staticClass:
+                                          "flex w-full rounded-md shadow-sm sm:ml-3 sm:w-auto"
+                                      },
+                                      [
+                                        _c(
+                                          "button",
+                                          {
+                                            directives: [
+                                              {
+                                                name: "show",
+                                                rawName: "v-show",
+                                                value: !_vm.editMode,
+                                                expression: "!editMode"
+                                              }
+                                            ],
+                                            staticClass:
+                                              "inline-flex justify-center w-full rounded-md border border-transparent px-4 py-2 bg-green-600 text-base leading-6 font-medium text-white shadow-sm hover:bg-green-500 focus:outline-none focus:border-green-700 focus:shadow-outline-green transition ease-in-out duration-150 sm:text-sm sm:leading-5",
+                                            attrs: {
+                                              "wire:click.prevent": "store()",
+                                              type: "button"
+                                            },
+                                            on: {
+                                              click: function($event) {
+                                                return _vm.save(_vm.form)
+                                              }
+                                            }
+                                          },
+                                          [
+                                            _vm._v(
+                                              "\n                                Save\n                              "
+                                            )
+                                          ]
+                                        )
+                                      ]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "span",
+                                      {
+                                        staticClass:
+                                          "flex w-full rounded-md shadow-sm sm:ml-3 sm:w-auto"
+                                      },
+                                      [
+                                        _c(
+                                          "button",
+                                          {
+                                            directives: [
+                                              {
+                                                name: "show",
+                                                rawName: "v-show",
+                                                value: _vm.editMode,
+                                                expression: "editMode"
+                                              }
+                                            ],
+                                            staticClass:
+                                              "inline-flex justify-center w-full rounded-md border border-transparent px-4 py-2 bg-green-600 text-base leading-6 font-medium text-white shadow-sm hover:bg-green-500 focus:outline-none focus:border-green-700 focus:shadow-outline-green transition ease-in-out duration-150 sm:text-sm sm:leading-5",
+                                            attrs: {
+                                              "wire:click.prevent": "store()",
+                                              type: "button"
+                                            },
+                                            on: {
+                                              click: function($event) {
+                                                return _vm.update(_vm.form)
+                                              }
+                                            }
+                                          },
+                                          [
+                                            _vm._v(
+                                              "\n                                Update\n                              "
+                                            )
+                                          ]
+                                        )
+                                      ]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "span",
+                                      {
+                                        staticClass:
+                                          "mt-3 flex w-full rounded-md shadow-sm sm:mt-0 sm:w-auto"
+                                      },
+                                      [
+                                        _c(
+                                          "button",
+                                          {
+                                            staticClass:
+                                              "inline-flex justify-center w-full rounded-md border border-gray-300 px-4 py-2 bg-white text-base leading-6 font-medium text-gray-700 shadow-sm hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue transition ease-in-out duration-150 sm:text-sm sm:leading-5",
+                                            attrs: { type: "button" },
+                                            on: {
+                                              click: function($event) {
+                                                return _vm.closeModal()
+                                              }
+                                            }
+                                          },
+                                          [
+                                            _vm._v(
+                                              "\n                                Cancel\n                              "
+                                            )
+                                          ]
+                                        )
+                                      ]
+                                    )
+                                  ]
+                                )
+                              ])
+                            ]
+                          )
+                        ]
+                      )
+                    ]
+                  )
+                : _vm._e()
+            ]
+          )
+        ])
+      ])
+    ]
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -63295,6 +65621,8 @@ var map = {
 	"./Profile/UpdatePasswordForm.vue": "./resources/js/Pages/Profile/UpdatePasswordForm.vue",
 	"./Profile/UpdateProfileInformationForm": "./resources/js/Pages/Profile/UpdateProfileInformationForm.vue",
 	"./Profile/UpdateProfileInformationForm.vue": "./resources/js/Pages/Profile/UpdateProfileInformationForm.vue",
+	"./events": "./resources/js/Pages/events.vue",
+	"./events.vue": "./resources/js/Pages/events.vue",
 	"./sections": "./resources/js/Pages/sections.vue",
 	"./sections.vue": "./resources/js/Pages/sections.vue"
 };
@@ -63937,6 +66265,75 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_UpdateProfileInformationForm_vue_vue_type_template_id_f38ebb82___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_UpdateProfileInformationForm_vue_vue_type_template_id_f38ebb82___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/Pages/events.vue":
+/*!***************************************!*\
+  !*** ./resources/js/Pages/events.vue ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _events_vue_vue_type_template_id_2f656762___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./events.vue?vue&type=template&id=2f656762& */ "./resources/js/Pages/events.vue?vue&type=template&id=2f656762&");
+/* harmony import */ var _events_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./events.vue?vue&type=script&lang=js& */ "./resources/js/Pages/events.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _events_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _events_vue_vue_type_template_id_2f656762___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _events_vue_vue_type_template_id_2f656762___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/Pages/events.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/Pages/events.vue?vue&type=script&lang=js&":
+/*!****************************************************************!*\
+  !*** ./resources/js/Pages/events.vue?vue&type=script&lang=js& ***!
+  \****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_events_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./events.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/events.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_events_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/Pages/events.vue?vue&type=template&id=2f656762&":
+/*!**********************************************************************!*\
+  !*** ./resources/js/Pages/events.vue?vue&type=template&id=2f656762& ***!
+  \**********************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_events_vue_vue_type_template_id_2f656762___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./events.vue?vue&type=template&id=2f656762& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/events.vue?vue&type=template&id=2f656762&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_events_vue_vue_type_template_id_2f656762___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_events_vue_vue_type_template_id_2f656762___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
