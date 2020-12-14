@@ -15,6 +15,12 @@
                     <div class="gallery-content">
                         <div class="gallery-grid">
 
+                            @foreach($gallery as $galleryItem)
+                                <a href="{{ url('images/uploads/'.$galleryItem->file ) }}" data-lightbox="gallery">
+                                    <span class="thumb" style="background-image:url('{{ url('images/uploads/'.$galleryItem->file ) }}')" alt="{{ $galleryItem->description }}"></span>
+                                </a>
+                            @endforeach
+
                             <a href="{{ url('images/gallery/1st-2nd-3rd-taekwondo-nationals.jpg') }}" data-lightbox="gallery">
                                 <span class="thumb" style="background-image:url('{{ url('images/gallery/1st-2nd-3rd-taekwondo-nationals.jpg') }}')"></span>
                             </a>

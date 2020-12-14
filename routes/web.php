@@ -1,7 +1,9 @@
 <?php
 
 use App\Http\Controllers\EventController;
+use App\Http\Controllers\GalleryImageController;
 use App\Models\Event;
+use App\Models\GalleryImage;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SectionController;
 
@@ -72,12 +74,14 @@ Route::get('/members', function () {
     ]);
 });
 Route::get('/gallery', function () {
-    return view('gallery');
+    $gallery = GalleryImage::orderBy('order', 'ASC')->get();
+    return view('gallery', ['gallery' => $gallery]);
 });
 
 
 Route::resource('sections', SectionController::class);
 Route::resource('events', EventController::class);
+Route::resource('galleryimages', GalleryImageController::class);
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia\Inertia::render('Dashboard');
