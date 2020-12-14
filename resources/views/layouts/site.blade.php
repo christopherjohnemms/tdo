@@ -200,9 +200,9 @@
             </div>
             <div class="social-flex">
                 <ul>
-                    <li><a href="#" target="_blank"><img src="{{ url('images/footer/facebook-logo.png') }}"  style="background: #fff; border-radius:5px;"/></a></li>
-                    <li><a href="#" target="_blank"><img src="{{ url('images/footer/twitter-logo.png') }}"  style="background: #fff; border-radius:5px;" /></a></li>
-                    <li><a href="#" target="_blank"><img src="{{ url('images/footer/instagram-logo.png') }}"  /></a></li>
+                    <li><a href="#" target="_blank"><img src="{{ url('images/footer/facebook-logo.png') }}"  style="width:45px; border-radius:5px;"/></a></li>
+                    <li><a href="#" target="_blank"><img src="{{ url('images/footer/twitter-logo.png') }}"  style="width:45px; border-radius:5px;" /></a></li>
+                    <li><a href="#" target="_blank"><img src="{{ url('images/footer/instagram-logo.png') }}"  style="width:45px;" /></a></li>
                 </ul>
             </div>
         </div>

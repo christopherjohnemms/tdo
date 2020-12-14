@@ -28,9 +28,9 @@
                         Find Cannock Tae Kwon Do on social media
                     </p>
                     <div class="socials" style="margin-bottom: 20px;">
-                        <a href="https://www.facebook.com/groups/46632409696/" target="_blank"><img src="{{ url('images/contact/facebook-logo.png') }}" style="border:none !important;"/> </a>
-                        <a href="https://twitter.com/taekwondo_bc" target="_blank"><img src="{{ url('images/contact/twitter-logo.png') }}" style="border:none !important;"/></a>
-                        <a href="https://www.instagram.com/bctaekwondo/" target="_blank"><img src="{{ url('images/contact/instagram-logo.png') }}" style="border:none !important;"/></a>
+                        <a href="https://www.facebook.com/groups/46632409696/" target="_blank"><img src="{{ url('images/contact/facebook-logo.png') }}" style="border:none !important; width:45px;"/> </a>
+                        <a href="https://twitter.com/taekwondo_bc" target="_blank"><img src="{{ url('images/contact/twitter-logo.png') }}" style="border:none !important; width:45px;"/></a>
+                        <a href="https://www.instagram.com/bctaekwondo/" target="_blank"><img src="{{ url('images/contact/instagram-logo.png') }}" style="border:none !important; width:45px;"/></a>
                     </div>
                     <a class="button-black" href="#contact">
                         Contact Us >
@@ -61,9 +61,9 @@
                         Find Burntwood Tae Kwon Do on social media
                     </p>
                     <div class="socials" style="margin-bottom: 20px;">
-                        <a href="https://www.facebook.com/groups/46632409696/" target="_blank"><img src="{{ url('images/contact/facebook-logo.png') }}" style="border:none !important;"/> </a>
-                        <a href="https://twitter.com/taekwondo_bc" target="_blank"><img src="{{ url('images/contact/twitter-logo.png') }}" style="border:none !important;"/></a>
-                        <a href="https://www.instagram.com/bctaekwondo/" target="_blank"><img src="{{ url('images/contact/instagram-logo.png') }}" style="border:none !important;"/></a>
+                        <a href="https://www.facebook.com/groups/46632409696/" target="_blank"><img src="{{ url('images/contact/facebook-logo.png') }}" style="border:none !important; width:45px;"/> </a>
+                        <a href="https://twitter.com/taekwondo_bc" target="_blank"><img src="{{ url('images/contact/twitter-logo.png') }}" style="border:none !important; width:45px;"/></a>
+                        <a href="https://www.instagram.com/bctaekwondo/" target="_blank"><img src="{{ url('images/contact/instagram-logo.png') }}" style="border:none !important; width:45px;"/></a>
                     </div>
                     <a class="button-black" href="#contact">
                         Contact Us >

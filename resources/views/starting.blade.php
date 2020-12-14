@@ -109,10 +109,10 @@
 
                     <div class="pack" style="margin-left: 20px !important; margin-bottom:30px !important;position: relative;">
                         <h3 class="headingPromo">Beginner's pack</h3>
-                        <a href="{{ url('/pdf//taekwondo-beginners-pack.pdf') }}" target="_blank">
+                        <a href="{{ url('/pdf/taekwondo-beginners-pack.pdf') }}" target="_blank">
                             <img src="{{ url('images/starting/beginners-pack.jpg') }}" style="width:100%; display: block;" alt="Beginners Pack"/>
                         </a>
-                        <a href="{{ url('/pdf//taekwondo-beginners-pack.pdf') }}" target="_blank">
+                        <a href="{{ url('/pdf/taekwondo-beginners-pack.pdf') }}" target="_blank">
                             <div class="d-l-pack-start"></div>
                         </a>
                     </div>
