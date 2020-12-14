@@ -51675,13 +51675,27 @@ var render = function() {
                       _vm._v("Order")
                     ]),
                     _vm._v(" "),
-                    _c("th", { staticClass: "px-4 py-2" }, [_vm._v("File")]),
+                    _c(
+                      "th",
+                      {
+                        staticClass: "px-4 py-2",
+                        staticStyle: { width: "150px" }
+                      },
+                      [_vm._v("File")]
+                    ),
                     _vm._v(" "),
                     _c("th", { staticClass: "px-4 py-2" }, [
                       _vm._v("Description")
                     ]),
                     _vm._v(" "),
-                    _c("th", { staticClass: "px-4 py-2" }, [_vm._v("Action")])
+                    _c(
+                      "th",
+                      {
+                        staticClass: "px-4 py-2",
+                        staticStyle: { width: "190px" }
+                      },
+                      [_vm._v("Action")]
+                    )
                   ])
                 ]),
                 _vm._v(" "),

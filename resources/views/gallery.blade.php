@@ -16,7 +16,7 @@
                         <div class="gallery-grid">
 
                             @foreach($gallery as $galleryItem)
-                                <a href="{{ url('images/uploads/'.$galleryItem->file ) }}" data-lightbox="gallery">
+                                <a href="{{ url('images/uploads/'.$galleryItem->file ) }}" data-lightbox="gallery" data-title="{{ $galleryItem->description }}">
                                     <span class="thumb" style="background-image:url('{{ url('images/uploads/'.$galleryItem->file ) }}')" alt="{{ $galleryItem->description }}"></span>
                                 </a>
                             @endforeach

@@ -21,9 +21,9 @@
                         <thead>
                         <tr class="bg-gray-100">
                             <th class="px-4 py-2 w-20 text-center">Order</th>
-                            <th class="px-4 py-2">File</th>
+                            <th class="px-4 py-2" style="width:150px;">File</th>
                             <th class="px-4 py-2">Description</th>
-                            <th class="px-4 py-2">Action</th>
+                            <th class="px-4 py-2" style="width:190px;">Action</th>
                         </tr>
                         </thead>
                         <tbody>
