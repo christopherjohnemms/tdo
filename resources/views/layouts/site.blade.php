@@ -26,7 +26,7 @@
 <body class="antialiased">
     <div class="container header">
         <div class="detail">
-            <p>Telephone <span>01543 570036</span></p>
+{{--            <p>Telephone <span>01543 570036</span></p>--}}
         </div>
         <div class="img">
             <img src="{{ url('images/header/burntwood-cannock-taekwondo-logo.png') }}" alt=""/>
@@ -35,7 +35,7 @@
             <img src="{{ url('images/header/burntwood-cannock-taekwondo-tigers-logo.png') }}" alt=""/>
         </div>
         <div class="detail detail-last">
-            <p>Mobile <span>01543 570036</span></p>
+            <p style="text-align: right;">Call us <span>07773 901281</span></p>
         </div>
     </div>
     <div class="container navigation">

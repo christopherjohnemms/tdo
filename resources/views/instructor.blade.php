@@ -11,7 +11,7 @@
                     <h1 class="aboutHead" style="margin-bottom:20px;">About your
                         Tae Kwon Do Instructor </h1>
                     <h2 class="aboutHeadSmall">
-                        Sean Hardwick is a highly experienced
+                        World Master Sean Hardwick, 7th Degree Black Belt, is a highly experienced
                         martial artist, who has trained in several disciplines since 1975…
                     </h2>
                     <p>
