@@ -83,6 +83,8 @@ Route::resource('sections', SectionController::class);
 Route::resource('events', EventController::class);
 Route::resource('galleryimages', GalleryImageController::class);
 
+Route::post('/contact-form', [App\Http\Controllers\ContactController::class, 'storeContactForm'])->name('contact-form.store');
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia\Inertia::render('Dashboard');
 })->name('dashboard');

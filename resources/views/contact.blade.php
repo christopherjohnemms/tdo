@@ -91,18 +91,39 @@
 
                         We’ll get back to you as soon as we can.
                     </p>
-                    <form>
+
+
+                    @if(Session::has('success'))
+                        <div class="alert alert-success">
+                            {{ Session::get('success') }}
+                            @php
+                                Session::forget('success');
+                            @endphp
+                        </div>
+                    @endif
+
+                    <form method="POST" id="contact" action="{{ route('contact-form.store') }}">
+                        {{ csrf_field() }}
                         <div class="row">
                             <label for="name">Name</label>
                             <input type="text" name="name"/>
+                            @if ($errors->has('name'))
+                                <span class="text-danger">{{ $errors->first('name') }}</span>
+                            @endif
                         </div>
                         <div class="row">
                             <label for="email">Email</label>
                             <input type="email" name="email"/>
+                            @if ($errors->has('email'))
+                                <span class="text-danger">{{ $errors->first('email') }}</span>
+                            @endif
                         </div>
                         <div class="row">
                             <label for="message">Message</label>
                             <textarea rows="8" name="message"></textarea>
+                            @if ($errors->has('message'))
+                                <span class="text-danger">{{ $errors->first('message') }}</span>
+                            @endif
                         </div>
                         <div class="row">
                             <input class="wrapped-input" type="checkbox" spellcheck="false"  name="agree" value="1">

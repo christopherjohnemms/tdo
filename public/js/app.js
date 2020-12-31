@@ -67323,9 +67323,9 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/vagrant/code/tdo/resources/js/app.js */"./resources/js/app.js");
-__webpack_require__(/*! /home/vagrant/code/tdo/resources/sass/tdo.scss */"./resources/sass/tdo.scss");
-module.exports = __webpack_require__(/*! /home/vagrant/code/tdo/resources/css/app.css */"./resources/css/app.css");
+__webpack_require__(/*! C:\projects\tdo\resources\js\app.js */"./resources/js/app.js");
+__webpack_require__(/*! C:\projects\tdo\resources\sass\tdo.scss */"./resources/sass/tdo.scss");
+module.exports = __webpack_require__(/*! C:\projects\tdo\resources\css\app.css */"./resources/css/app.css");
 
 
 /***/ })
