@@ -19,14 +19,11 @@
                     </div>
 
                     <p>
-                        My name is Sean Hardwick and I am the Chief Instructor of the club. I have been involved in Tae Kwon Do for the past 32 years and currently hold the grade of 6th Degree Black Belt Master. I have been teaching Tae Kwon Do for 20 years and have been running childrens Tigers classes for 14 years.
+                        My name is Sean Hardwick and I am the Chief Instructor of the club. I have been involved in Tae Kwon Do since 1983 and currently hold the grade of 7th Degree, World Master. I have been teaching Tae Kwon Do for over 25 years and have been running childrens Tigers classes for 20 years.
 
                     </p>
                     <p>
-
-                        I am a fully qualified instructor with my qualifications being recognised by the British Sports Council, the British Tae Kwon Do Council and the
-
-                        Tae Kwon Do Association of Great Britain. I have also been advanced screened by the CRB (Criminal Records Bureau).
+                        I am a fully qualified instructor with my qualifications being recognised by the British Sports Council, the British Tae Kwon Do Council and the Tae Kwon Do Association of Great Britain. Myself and all my assistant instructors are DBS checked.
                     </p>
                 </div>
                 <div class="right">
@@ -128,7 +125,7 @@
                     </p>
 
 
-                    <p style="margin-bottom:0;background: #FFCB27; padding:3px; font-weight:700; font-size:22px;">GRADING: £30 <span style="font-size:16px">per grade</span></p>
+                    <p style="margin-bottom:0;background: #FFCB27; padding:3px; font-weight:700; font-size:22px;">GRADING: £32 <span style="font-size:16px">per grade</span></p>
 
                     <p>
                         Grading, or taking belts, takes place three times per year. However, I will not allow students to enter into a grading until I am sure that they are ready.
