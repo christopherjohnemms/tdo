@@ -1,8 +1,10 @@
 <?php
 
 use App\Http\Controllers\EventController;
+use App\Http\Controllers\EventImageController;
 use App\Http\Controllers\GalleryImageController;
 use App\Models\Event;
+use App\Models\EventImage;
 use App\Models\GalleryImage;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SectionController;
@@ -57,6 +59,7 @@ Route::get('/members', function () {
     $october = Event::where('month','october')->get();
     $november = Event::where('month','november')->get();
     $december = Event::where('month','december')->get();
+    $eventimage = EventImage::orderBy('created_at', 'ASC')->first();
 
     return view('members', [
         'january' => $january,
@@ -71,6 +74,9 @@ Route::get('/members', function () {
         'october' => $october,
         'november' => $november,
         'december' => $december,
+        'eventimage' => $eventimage,
+
+
     ]);
 });
 Route::get('/gallery', function () {
@@ -82,6 +88,7 @@ Route::get('/gallery', function () {
 Route::resource('sections', SectionController::class);
 Route::resource('events', EventController::class);
 Route::resource('galleryimages', GalleryImageController::class);
+Route::resource('eventimage', EventImageController::class);
 
 Route::post('/contact-form', [App\Http\Controllers\ContactController::class, 'storeContactForm'])->name('contact-form.store');
 

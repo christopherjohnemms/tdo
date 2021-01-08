@@ -26,6 +26,10 @@
                                 Edit Events
                             </jet-nav-link>
 
+                            <jet-nav-link :href="route('eventimage.index')" :active="route().current('eventimage.index')">
+                                Edit Event Image
+                            </jet-nav-link>
+
                             <jet-nav-link :href="route('galleryimages.index')" :active="route().current('galleryimages.index')">
                                 Edit Gallery
                             </jet-nav-link>

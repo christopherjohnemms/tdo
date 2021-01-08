@@ -224,13 +224,15 @@
                 </div>
             </div>
 
+            @if(isset($eventimage) && $eventimage)
             <div class="flex-container tiger-row reverse" style="    align-items: center; justify-content: space-evenly;">
                 <div>
-                    <h2 class="aboutHead" style="text-align: center;">Upcoming Tae Kwon Do Events in 2016</h2>
-                    
-                    <img src="{{ url('images/members/tagb-world-champioships-2016.jpg') }}" alt="" style="width:80%; max-width:400px; margin:40px auto; display: block;"/>
+                    <h2 class="aboutHead" style="text-align: center;">Upcoming Tae Kwon Do Events in {{ date("Y") }}</h2>
+{{--                    <img src="{{ url('images/members/tagb-world-champioships-2016.jpg') }}" alt="" style="width:80%; max-width:400px; margin:40px auto; display: block;"/>--}}
+                    <img src="/images/uploads/{{ $eventimage->file }}" alt="" style="width:80%; max-width:400px; margin:40px auto; display: block;"/>
                 </div>
             </div>
+            @endif
 
             <div class="flex-container tiger-row">
                 <div class="left">
