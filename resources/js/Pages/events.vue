@@ -370,6 +370,9 @@
                                                         <option value="club_gradings">Club Gradings</option>
                                                         <option value="competitions">Competitions</option>
                                                         <option value="tagb_courses">TAGB Courses</option>
+                                                        <option value="general">General</option>
+                                                        <option value="news">News</option>
+                                                        <option value="urgent_updates">Urgent Updates</option>
                                                     </select>
                                                     <div v-if="$page.errors.type" class="text-red-500">{{ $page.errors.type[0] }}</div>
                                                 </div>

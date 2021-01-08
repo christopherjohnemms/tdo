@@ -497,8 +497,22 @@ body{
                 }
                 &:nth-child(4){
                     &:after{
-                        background:#fff;
-                        border:1px solid black;
+                        background:#945d1d;
+                    }
+                }
+                &:nth-child(5){
+                    &:after{
+                        background:#bd4e98;
+                    }
+                }
+                &:nth-child(6){
+                    &:after{
+                        background:#b2b2b2;
+                    }
+                }
+                &:nth-child(7){
+                    &:after{
+                        background:#e74112;
                     }
                 }
 
@@ -544,7 +558,7 @@ body{
                         &.holidays{
                             td{
                                 font-weight:700;
-                                background-color: #FAA61A;
+                                background-color: #eda941;
                                 color:#fff;
                                 &:last-child{
                                     padding-left:0px !important;
@@ -554,20 +568,43 @@ body{
                         &.club-gradings, &.club_gradings{
                             td{
                                 font-weight:700;
-                                background-color: #003CFF;
+                                background-color: #2c53a0;
                                 color:#fff;
                             }
                         }
                         &.competitions{
                             td{
                                 font-weight:700;
-                                background-color: #009B00;
+                                background-color: #439735;
                                 color:#fff;
                             }
                         }
                         &.TAGB, &.tagb_courses{
                             td{
-                                background-color: transparent;
+                                color:#fff;
+                                font-weight:700;
+                                background-color: #945d1d;
+                            }
+                        }
+                        &.general{
+                            td{
+                                font-weight:700;
+                                background-color: #bd4e98;
+                                color:#fff;
+                            }
+                        }
+                        &.news{
+                            td{
+                                font-weight:700;
+                                background-color: #b2b2b2;
+                                color:#fff;
+                            }
+                        }
+                        &.urgent-updates, &.urgent_updates{
+                            td{
+                                font-weight:700;
+                                background-color: #e74112;
+                                color:#fff;
                             }
                         }
                         td{
