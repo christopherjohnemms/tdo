@@ -3,9 +3,11 @@
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\EventImageController;
 use App\Http\Controllers\GalleryImageController;
+use App\Http\Controllers\GradingsController;
 use App\Models\Event;
 use App\Models\EventImage;
 use App\Models\GalleryImage;
+use App\Models\Grading;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SectionController;
 
@@ -61,6 +63,11 @@ Route::get('/members', function () {
     $december = Event::where('month','december')->get();
     $eventimage = EventImage::orderBy('created_at', 'ASC')->first();
 
+    $gradingTheory = Grading::where('type', 'grading_theory_sheets')->orderBy('order', 'ASC')->get();
+    $tigersGrading = Grading::where('type', 'tigers_grading_sheets')->orderBy('order', 'ASC')->get();
+    $patternSheets = Grading::where('type', 'pattern_sheets')->orderBy('order', 'ASC')->get();
+    $blackBelt = Grading::where('type', 'black_belt_syllabus')->orderBy('order', 'ASC')->get();
+
     return view('members', [
         'january' => $january,
         'february' => $february,
@@ -75,7 +82,10 @@ Route::get('/members', function () {
         'november' => $november,
         'december' => $december,
         'eventimage' => $eventimage,
-
+        'gradingTheory' => $gradingTheory,
+        'tigersGrading' => $tigersGrading,
+        'patternSheets' => $patternSheets,
+        'blackBelt' => $blackBelt,
 
     ]);
 });
@@ -89,6 +99,7 @@ Route::resource('sections', SectionController::class);
 Route::resource('events', EventController::class);
 Route::resource('galleryimages', GalleryImageController::class);
 Route::resource('eventimage', EventImageController::class);
+Route::resource('gradings', GradingsController::class);
 
 Route::post('/contact-form', [App\Http\Controllers\ContactController::class, 'storeContactForm'])->name('contact-form.store');
 

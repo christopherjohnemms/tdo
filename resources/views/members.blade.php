@@ -241,129 +241,153 @@
                             <div>
                                 <h3 >Grading Theory Sheets</h3>
                                 <ul>
-                                    <li>
-                                        <a href="{{ url('pdf/Grading_Theory_Sheets/grading-theory-10th-kup-white-belt.pdf') }}" target="_blank">10th Kup White Belt</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ url('pdf/Grading_Theory_Sheets/grading-theory-9th-kup-yellow-stripe.pdf') }}" target="_blank">9th Kup Yellow Stripe</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ url('pdf/Grading_Theory_Sheets/grading-theory-8th-kup-yellow-belt.pdf') }}" target="_blank">8th Kup Yellow Belt</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ url('pdf/Grading_Theory_Sheets/grading-theory-7th-kup-green-stripe.pdf') }}" target="_blank">7th Kup Green Stripe</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ url('pdf/Grading_Theory_Sheets/grading-theory-6th-kup-green-belt.pdf') }}" target="_blank">6th Kup Green Belt</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ url('pdf/Grading_Theory_Sheets/grading-theory-5th-kup-blue-stripe.pdf') }}" target="_blank">5th Kup Blue Stripe</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ url('pdf/Grading_Theory_Sheets/grading-theory-4th-kup-blue-belt.pdf') }}" target="_blank">4th Kup Blue Belt</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ url('pdf/Grading_Theory_Sheets/grading-theory-3rd-kup-red-stripe.pdf') }}" target="_blank">3rd Kup Red Stripe</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ url('pdf/Grading_Theory_Sheets/grading-theory-2nd-kup-red-belt.pdf') }}" target="_blank">2nd Kup Red Belt</a>
-                                    </li>
+
+                                    @foreach($gradingTheory as $pdf)
+                                        <li>
+                                            <a href="/images/uploads/{{  $pdf->file }}" target="_blank">{{ $pdf->name }}</a>
+                                        </li>
+                                    @endforeach
+
+
+{{--                                    <li>--}}
+{{--                                        <a href="{{ url('pdf/Grading_Theory_Sheets/grading-theory-10th-kup-white-belt.pdf') }}" target="_blank">10th Kup White Belt</a>--}}
+{{--                                    </li>--}}
+{{--                                    <li>--}}
+{{--                                        <a href="{{ url('pdf/Grading_Theory_Sheets/grading-theory-9th-kup-yellow-stripe.pdf') }}" target="_blank">9th Kup Yellow Stripe</a>--}}
+{{--                                    </li>--}}
+{{--                                    <li>--}}
+{{--                                        <a href="{{ url('pdf/Grading_Theory_Sheets/grading-theory-8th-kup-yellow-belt.pdf') }}" target="_blank">8th Kup Yellow Belt</a>--}}
+{{--                                    </li>--}}
+{{--                                    <li>--}}
+{{--                                        <a href="{{ url('pdf/Grading_Theory_Sheets/grading-theory-7th-kup-green-stripe.pdf') }}" target="_blank">7th Kup Green Stripe</a>--}}
+{{--                                    </li>--}}
+{{--                                    <li>--}}
+{{--                                        <a href="{{ url('pdf/Grading_Theory_Sheets/grading-theory-6th-kup-green-belt.pdf') }}" target="_blank">6th Kup Green Belt</a>--}}
+{{--                                    </li>--}}
+{{--                                    <li>--}}
+{{--                                        <a href="{{ url('pdf/Grading_Theory_Sheets/grading-theory-5th-kup-blue-stripe.pdf') }}" target="_blank">5th Kup Blue Stripe</a>--}}
+{{--                                    </li>--}}
+{{--                                    <li>--}}
+{{--                                        <a href="{{ url('pdf/Grading_Theory_Sheets/grading-theory-4th-kup-blue-belt.pdf') }}" target="_blank">4th Kup Blue Belt</a>--}}
+{{--                                    </li>--}}
+{{--                                    <li>--}}
+{{--                                        <a href="{{ url('pdf/Grading_Theory_Sheets/grading-theory-3rd-kup-red-stripe.pdf') }}" target="_blank">3rd Kup Red Stripe</a>--}}
+{{--                                    </li>--}}
+{{--                                    <li>--}}
+{{--                                        <a href="{{ url('pdf/Grading_Theory_Sheets/grading-theory-2nd-kup-red-belt.pdf') }}" target="_blank">2nd Kup Red Belt</a>--}}
+{{--                                    </li>--}}
                                 </ul>
                             </div>
 
                             <div>
                                 <h3 style="color:red;">Tigers Grading Sheets</h3>
                                 <ul>
-                                    <li>
-                                        <a href="{{ url('pdf/Tigers_Grading_Sheets/taekwondo-tigers-10th-kup-white-belt.pdf') }}" target="_blank">10th Kup White Belt</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ url('pdf/Tigers_Grading_Sheets/taekwondo-tigers-9th-kup-yellow-stripe.pdf') }}" target="_blank">9th Kup Yellow Stripe</a>
-                                    </li>
-                                    <li>
-                                       <a href="{{ url('pdf/Tigers_Grading_Sheets/taekwondo-tigers-8th-kup-yellow-belt.pdf') }}" target="_blank">8th Kup Yellow Belt</a>
-                                    </li>
-                                    <li>
-                                       <a href="{{ url('pdf/Tigers_Grading_Sheets/taekwondo-tigers-7th-kup-green-stripe.pdf') }}" target="_blank">7th Kup Green Stripe</a>
-                                    </li>
-                                    <li>
-                                       <a href="{{ url('pdf/Tigers_Grading_Sheets/taekwondo-tigers-6th-kup-green-belt.pdf') }}" target="_blank">6th Kup Green Belt</a>
-                                    </li>
-                                    <li>
-                                       <a href="{{ url('pdf/Tigers_Grading_Sheets/taekwondo-tigers-5th-kup-blue-stripe.pdf') }}" target="_blank">5th Kup Blue Stripe</a>
-                                    </li>
-                                    <li>
-                                       <a href="{{ url('pdf/Tigers_Grading_Sheets/taekwondo-tigers-4th-kup-blue-belt.pdf') }}" target="_blank">4th Kup Blue Belt</a>
-                                    </li>
-                                    <li>
-                                       <a href="{{ url('pdf/Tigers_Grading_Sheets/taekwondo-tigers-3rd-kup-red-stripe.pdf') }}" target="_blank">3rd Kup Red Stripe</a>
-                                    </li>
+                                    @foreach($tigersGrading as $pdf)
+                                        <li>
+                                            <a href="/images/uploads/{{  $pdf->file }}" target="_blank">{{ $pdf->name }}</a>
+                                        </li>
+                                    @endforeach
+{{--                                    <li>--}}
+{{--                                        <a href="{{ url('pdf/Tigers_Grading_Sheets/taekwondo-tigers-10th-kup-white-belt.pdf') }}" target="_blank">10th Kup White Belt</a>--}}
+{{--                                    </li>--}}
+{{--                                    <li>--}}
+{{--                                        <a href="{{ url('pdf/Tigers_Grading_Sheets/taekwondo-tigers-9th-kup-yellow-stripe.pdf') }}" target="_blank">9th Kup Yellow Stripe</a>--}}
+{{--                                    </li>--}}
+{{--                                    <li>--}}
+{{--                                       <a href="{{ url('pdf/Tigers_Grading_Sheets/taekwondo-tigers-8th-kup-yellow-belt.pdf') }}" target="_blank">8th Kup Yellow Belt</a>--}}
+{{--                                    </li>--}}
+{{--                                    <li>--}}
+{{--                                       <a href="{{ url('pdf/Tigers_Grading_Sheets/taekwondo-tigers-7th-kup-green-stripe.pdf') }}" target="_blank">7th Kup Green Stripe</a>--}}
+{{--                                    </li>--}}
+{{--                                    <li>--}}
+{{--                                       <a href="{{ url('pdf/Tigers_Grading_Sheets/taekwondo-tigers-6th-kup-green-belt.pdf') }}" target="_blank">6th Kup Green Belt</a>--}}
+{{--                                    </li>--}}
+{{--                                    <li>--}}
+{{--                                       <a href="{{ url('pdf/Tigers_Grading_Sheets/taekwondo-tigers-5th-kup-blue-stripe.pdf') }}" target="_blank">5th Kup Blue Stripe</a>--}}
+{{--                                    </li>--}}
+{{--                                    <li>--}}
+{{--                                       <a href="{{ url('pdf/Tigers_Grading_Sheets/taekwondo-tigers-4th-kup-blue-belt.pdf') }}" target="_blank">4th Kup Blue Belt</a>--}}
+{{--                                    </li>--}}
+{{--                                    <li>--}}
+{{--                                       <a href="{{ url('pdf/Tigers_Grading_Sheets/taekwondo-tigers-3rd-kup-red-stripe.pdf') }}" target="_blank">3rd Kup Red Stripe</a>--}}
+{{--                                    </li>--}}
                                 </ul>
                             </div>
 
                             <div>
                                 <h3 style="color:red;">Pattern Sheets</h3>
                                 <ul>
-                                    <li>
-                                       <a href="{{ url('pdf/Pattern_Sheets/pattern-chon-ji.pdf') }}" target="_blank">Chon-Ji Pattern</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ url('pdf/Pattern_Sheets/pattern-dan-gun.pdf') }}" target="_blank">Dan-Gun Pattern</a>
-                                    </li>
-                                    <li>
-                                         <a href="{{ url('pdf/Pattern_Sheets/pattern-do-san.pdf') }}" target="_blank">Do-San Pattern</a>
-                                    </li>
-                                    <li>
-                                         <a href="{{ url('pdf/Pattern_Sheets/pattern-won-hyo.pdf') }}" target="_blank">Won-Hyo Pattern</a>
-                                    </li>
-                                    <li>
-                                         <a href="{{ url('pdf/Pattern_Sheets/pattern-yul-gok.pdf') }}" target="_blank">Yul-Gok Pattern</a>
-                                    </li>
-                                    <li>
-                                         <a href="{{ url('pdf/Pattern_Sheets/pattern-joong-gun.pdf') }}" target="_blank">Joong-Gun Pattern</a>
-                                    </li>
-                                    <li>
-                                         <a href="{{ url('pdf/Pattern_Sheets/pattern-toi-gye.pdf') }}" target="_blank">Toi-Gye Pattern</a>
-                                    </li>
-                                    <li>
-                                         <a href="{{ url('pdf/Pattern_Sheets/pattern-hwa-rang.pdf') }}" target="_blank">Hwa-Rang Pattern</a>
-                                    </li>
-                                    <li>
-                                         <a href="{{ url('pdf/Pattern_Sheets/pattern-choong-moo.pdf') }}" target="_blank">Choong-Moo Pattern</a>
-                                    </li>
+                                    @foreach($patternSheets as $pdf)
+                                        <li>
+                                            <a href="/images/uploads/{{  $pdf->file }}" target="_blank">{{ $pdf->name }}</a>
+                                        </li>
+                                    @endforeach
+{{--                                    <li>--}}
+{{--                                       <a href="{{ url('pdf/Pattern_Sheets/pattern-chon-ji.pdf') }}" target="_blank">Chon-Ji Pattern</a>--}}
+{{--                                    </li>--}}
+{{--                                    <li>--}}
+{{--                                        <a href="{{ url('pdf/Pattern_Sheets/pattern-dan-gun.pdf') }}" target="_blank">Dan-Gun Pattern</a>--}}
+{{--                                    </li>--}}
+{{--                                    <li>--}}
+{{--                                         <a href="{{ url('pdf/Pattern_Sheets/pattern-do-san.pdf') }}" target="_blank">Do-San Pattern</a>--}}
+{{--                                    </li>--}}
+{{--                                    <li>--}}
+{{--                                         <a href="{{ url('pdf/Pattern_Sheets/pattern-won-hyo.pdf') }}" target="_blank">Won-Hyo Pattern</a>--}}
+{{--                                    </li>--}}
+{{--                                    <li>--}}
+{{--                                         <a href="{{ url('pdf/Pattern_Sheets/pattern-yul-gok.pdf') }}" target="_blank">Yul-Gok Pattern</a>--}}
+{{--                                    </li>--}}
+{{--                                    <li>--}}
+{{--                                         <a href="{{ url('pdf/Pattern_Sheets/pattern-joong-gun.pdf') }}" target="_blank">Joong-Gun Pattern</a>--}}
+{{--                                    </li>--}}
+{{--                                    <li>--}}
+{{--                                         <a href="{{ url('pdf/Pattern_Sheets/pattern-toi-gye.pdf') }}" target="_blank">Toi-Gye Pattern</a>--}}
+{{--                                    </li>--}}
+{{--                                    <li>--}}
+{{--                                         <a href="{{ url('pdf/Pattern_Sheets/pattern-hwa-rang.pdf') }}" target="_blank">Hwa-Rang Pattern</a>--}}
+{{--                                    </li>--}}
+{{--                                    <li>--}}
+{{--                                         <a href="{{ url('pdf/Pattern_Sheets/pattern-choong-moo.pdf') }}" target="_blank">Choong-Moo Pattern</a>--}}
+{{--                                    </li>--}}
                                 </ul>
                             </div>
 
                             <div>
                                 <h3 style="color:red;">Black Belt Syllabus </h3>
                                 <ul>
-                                    <li>
-                                        <a href="{{ url('pdf/Black_Belt_Syllabus/black-belt-syllabus-sheet-1.pdf') }}" target="_blank">Black Belt Syllabus Sheet 1</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ url('pdf/Black_Belt_Syllabus/black-belt-syllabus-sheet-2.pdf') }}" target="_blank">Black Belt Syllabus Sheet 12</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ url('pdf/Black_Belt_Syllabus/black-belt-syllabus-sheet-3.pdf') }}" target="_blank">Black Belt Syllabus Sheet 3</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ url('pdf/Black_Belt_Syllabus/black-belt-syllabus-sheet-4.pdf') }}" target="_blank">Black Belt Syllabus Sheet 4</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ url('pdf/Black_Belt_Syllabus/black-belt-syllabus-sheet-5.pdf') }}" target="_blank">Black Belt Syllabus Sheet 5</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ url('pdf/Black_Belt_Syllabus/black-belt-syllabus-sheet-6.pdf') }}" target="_blank">Black Belt Syllabus Sheet 6</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ url('pdf/Black_Belt_Syllabus/black-belt-syllabus-sheet-7.pdf') }}" target="_blank">Black Belt Syllabus Sheet 7</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ url('pdf/Black_Belt_Syllabus/black-belt-syllabus-sheet-8.pdf') }}" target="_blank">Black Belt Syllabus Sheet 8</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ url('pdf/Black_Belt_Syllabus/black-belt-syllabus-sheet-9.pdf') }}" target="_blank">Black Belt Syllabus Sheet 9</a>
-                                    </li>
+                                    @foreach($blackBelt as $pdf)
+                                        <li>
+                                            <a href="/images/uploads/{{  $pdf->file }}" target="_blank">{{ $pdf->name }}</a>
+                                        </li>
+                                    @endforeach
+
+{{--                                    <li>--}}
+{{--                                        <a href="{{ url('pdf/Black_Belt_Syllabus/black-belt-syllabus-sheet-1.pdf') }}" target="_blank">Black Belt Syllabus Sheet 1</a>--}}
+{{--                                    </li>--}}
+{{--                                    <li>--}}
+{{--                                        <a href="{{ url('pdf/Black_Belt_Syllabus/black-belt-syllabus-sheet-2.pdf') }}" target="_blank">Black Belt Syllabus Sheet 12</a>--}}
+{{--                                    </li>--}}
+{{--                                    <li>--}}
+{{--                                        <a href="{{ url('pdf/Black_Belt_Syllabus/black-belt-syllabus-sheet-3.pdf') }}" target="_blank">Black Belt Syllabus Sheet 3</a>--}}
+{{--                                    </li>--}}
+{{--                                    <li>--}}
+{{--                                        <a href="{{ url('pdf/Black_Belt_Syllabus/black-belt-syllabus-sheet-4.pdf') }}" target="_blank">Black Belt Syllabus Sheet 4</a>--}}
+{{--                                    </li>--}}
+{{--                                    <li>--}}
+{{--                                        <a href="{{ url('pdf/Black_Belt_Syllabus/black-belt-syllabus-sheet-5.pdf') }}" target="_blank">Black Belt Syllabus Sheet 5</a>--}}
+{{--                                    </li>--}}
+{{--                                    <li>--}}
+{{--                                        <a href="{{ url('pdf/Black_Belt_Syllabus/black-belt-syllabus-sheet-6.pdf') }}" target="_blank">Black Belt Syllabus Sheet 6</a>--}}
+{{--                                    </li>--}}
+{{--                                    <li>--}}
+{{--                                        <a href="{{ url('pdf/Black_Belt_Syllabus/black-belt-syllabus-sheet-7.pdf') }}" target="_blank">Black Belt Syllabus Sheet 7</a>--}}
+{{--                                    </li>--}}
+{{--                                    <li>--}}
+{{--                                        <a href="{{ url('pdf/Black_Belt_Syllabus/black-belt-syllabus-sheet-8.pdf') }}" target="_blank">Black Belt Syllabus Sheet 8</a>--}}
+{{--                                    </li>--}}
+{{--                                    <li>--}}
+{{--                                        <a href="{{ url('pdf/Black_Belt_Syllabus/black-belt-syllabus-sheet-9.pdf') }}" target="_blank">Black Belt Syllabus Sheet 9</a>--}}
+{{--                                    </li>--}}
 
                                 </ul>
                             </div>
