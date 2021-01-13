@@ -1,5 +1,25 @@
 @charset "UTF-8";
 
+.mobile-show {
+  display: none !important;
+}
+
+@media (max-width: 600px) {
+  .mobile-show {
+    display: block !important;
+  }
+}
+
+.desktop-show {
+  display: block !important;
+}
+
+@media (max-width: 600px) {
+  .desktop-show {
+    display: none !important;
+  }
+}
+
 body {
   background-color: #000;
 }
@@ -24,10 +44,23 @@ body {
   padding-top: 20px;
 }
 
+@media (max-width: 600px) {
+  .header {
+    display: block !important;
+    text-align: center;
+  }
+}
+
 .header .detail {
   flex: 1 1 auto;
   max-width: 199px;
   margin-right: 95px;
+}
+
+@media (max-width: 600px) {
+  .header .detail {
+    display: none;
+  }
 }
 
 .header .detail-last {
@@ -35,9 +68,32 @@ body {
   margin-left: 95px;
 }
 
+@media (max-width: 600px) {
+  .header .detail-last {
+    display: block !important;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    max-width: 100% !important;
+    flex: none !important;
+  }
+
+  .header .detail-last p {
+    display: block;
+    text-align: center !important;
+  }
+}
+
 .header .img {
   flex: 0 0 160px;
   margin-right: 20px;
+}
+
+@media (max-width: 600px) {
+  .header .img {
+    display: inline-block;
+    flex: none;
+  }
 }
 
 .header .img-last {
@@ -67,6 +123,12 @@ body {
 
 .navigation {
   margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .navigation {
+    display: none !important;
+  }
 }
 
 .navigation ul {
@@ -175,6 +237,12 @@ body {
   cursor: pointer;
 }
 
+@media (max-width: 600px) {
+  .page .home-slider .slick-prev {
+    left: 40%;
+  }
+}
+
 .page .home-slider .slick-prev:hover {
   background-image: url("/images/home/arrow-left-red.jpg");
 }
@@ -192,13 +260,19 @@ body {
   cursor: pointer;
 }
 
+@media (max-width: 600px) {
+  .page .home-slider .slick-next {
+    left: calc(44% + 45px);
+  }
+}
+
 .page .home-slider .slick-next:hover {
   background-image: url("/images/home/arrow-right-red.jpg");
 }
 
 .page .welcome-block {
   background: #fff;
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
   box-sizing: border-box;
   padding: 10px 40px;
@@ -215,6 +289,12 @@ body {
   border-bottom: 1px solid #333;
 }
 
+@media (max-width: 960px) {
+  .page .welcome-block .flex-container {
+    display: block;
+  }
+}
+
 .page .welcome-block .flex-container .left {
   flex: 1 1 auto;
 }
@@ -224,15 +304,36 @@ body {
   margin-left: 20px;
 }
 
+@media (max-width: 600px) {
+  .page .welcome-block .flex-container .right {
+    margin-left: 0;
+  }
+}
+
 .page .welcome-block .flex-container .right img {
   display: block;
   width: 100%;
+}
+
+@media (max-width: 960px) {
+  .page .welcome-block .flex-container .right img {
+    max-width: 320px;
+    margin: 20px auto 0 auto;
+  }
 }
 
 .page .welcome-block .flex-container .childrens {
   flex: 1 1 50%;
   margin-right: 20px;
   margin-bottom: 80px;
+}
+
+@media (max-width: 960px) {
+  .page .welcome-block .flex-container .childrens {
+    margin-right: 0;
+    margin-bottom: 40px;
+    margin-left: 0 !important;
+  }
 }
 
 .page .welcome-block .flex-container .childrens .tigers-bg {
@@ -251,6 +352,12 @@ body {
 .page .welcome-block .flex-container .schedule {
   flex: 1 1 50%;
   margin-left: 20px;
+}
+
+@media (max-width: 960px) {
+  .page .welcome-block .flex-container .schedule {
+    margin-left: 0;
+  }
 }
 
 .page .welcome-block .flex-container .schedule .schedule-table {
@@ -273,6 +380,30 @@ body {
   color: #fff;
   margin: 0;
   font-size: 1.2REM;
+}
+
+.page .welcome-block .flex-container .schedule-childrens {
+  margin-right: 0;
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 600px) {
+  .page .welcome-block .flex-container .schedule-childrens {
+    margin-left: 0;
+  }
+}
+
+.page .welcome-block .flex-container .schedule-pack {
+  margin-left: 20px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+@media (max-width: 600px) {
+  .page .welcome-block .flex-container .schedule-pack {
+    margin-left: 0;
+  }
 }
 
 .page .welcome-block .flex-container.secondary-box {
@@ -310,8 +441,8 @@ body {
 
 .page .tiger-hero .tiger-div {
   position: relative;
-  width: 1160px;
   margin: 0 auto;
+  max-width: 1160px;
 }
 
 .page .tiger-hero .d-l-pack {
@@ -325,6 +456,20 @@ body {
   right: 232px;
   z-index: 100;
   cursor: pointer;
+}
+
+@media (max-width: 1159px) {
+  .page .tiger-hero .d-l-pack {
+    bottom: -5vw;
+    right: 15vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .page .tiger-hero .d-l-pack {
+    bottom: -25%;
+    right: 0%;
+  }
 }
 
 .page .tiger-hero .welcome {
@@ -367,6 +512,12 @@ body {
   background: #FFCB27;
 }
 
+@media (max-width: 600px) {
+  .page .tiger-row .left .imghead img {
+    width: 100%;
+  }
+}
+
 .page .tiger-row .left p {
   font-size: 14px;
   font-weight: 600;
@@ -404,6 +555,15 @@ body {
   left: -150px;
 }
 
+@media (max-width: 600px) {
+  .page .d-l-pack-start {
+    position: inherit;
+    left: inherit;
+    bottom: inherit;
+    margin: 40px auto 0 auto;
+  }
+}
+
 .page .d-l-pack-start:hover {
   cursor: pointer;
   background-image: url("/images/starting/download-beginners-pack-button-rollover.png");
@@ -439,6 +599,26 @@ body {
   color: #ED1C24;
   margin: 0;
   line-height: 32px;
+}
+
+.page .about-tabg {
+  width: 180px;
+}
+
+.page .about-tabg img {
+  width: 100%;
+}
+
+@media (max-width: 960px) {
+  .page .about-tabg {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .page #contact {
+    margin-bottom: 40px;
+  }
 }
 
 .page form .row {
@@ -484,6 +664,12 @@ body {
   justify-content: space-between;
 }
 
+@media (max-width: 960px) {
+  .page .members-heading {
+    display: block;
+  }
+}
+
 .page .members-heading h2 {
   margin-right: 40px;
   flex: 0 0 706px;
@@ -493,9 +679,23 @@ body {
   flex: 1 1 auto;
 }
 
+@media (max-width: 960px) {
+  .page .members-heading .key {
+    flex: none;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+}
+
 .page .members-heading ul {
   padding: 0;
   margin: 0;
+}
+
+@media (max-width: 960px) {
+  .page .members-heading ul {
+    max-width: 300px;
+  }
 }
 
 .page .members-heading ul li {
@@ -718,6 +918,16 @@ body {
   padding-top: 30px;
 }
 
+@media (max-width: 600px) {
+  .footer {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: top right;
+  }
+}
+
 .footer.tigers-yellow {
   background-image: url("/images/tigers/burntwood-cannock-taekwondo-footer-yellow.png");
 }
@@ -738,6 +948,30 @@ body {
 }
 
 .footer .flex-footer .address .address-flex .img {
+  flex: none;
+  margin-right: 25px;
+}
+
+.footer .flex-footer .address .phone-flex {
+  display: none !important;
+}
+
+@media (max-width: 600px) {
+  .footer .flex-footer .address .phone-flex {
+    display: flex !important;
+  }
+}
+
+.footer .flex-footer .address .phone-flex p {
+  color: #fff;
+  font-size: 14px;
+}
+
+.footer .flex-footer .address .phone-flex p:first-child {
+  margin-top: 0;
+}
+
+.footer .flex-footer .address .phone-flex .img {
   flex: none;
   margin-right: 25px;
 }

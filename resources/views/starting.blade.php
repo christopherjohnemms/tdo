@@ -100,14 +100,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="childrens" style="margin-right:0 !important;margin-left:20px !important; margin-bottom:30px !important;">
+                    <div class="childrens schedule-childrens" style="">
                         <h3 class="headingPromo">Childrens Classes</h3>
                         <a href="{{ url('/tigers') }}">
                             <div class="tigers-bg"></div>
                         </a>
                     </div>
 
-                    <div class="pack" style="margin-left: 20px !important; margin-bottom:30px !important;position: relative;">
+                    <div class="pack schedule-pack" >
                         <h3 class="headingPromo">Beginner's pack</h3>
                         <a href="{{ url('/pdf/taekwondo-beginners-pack.pdf') }}" target="_blank">
                             <img src="{{ url('images/starting/beginners-pack.jpg') }}" style="width:100%; display: block;" alt="Beginners Pack"/>

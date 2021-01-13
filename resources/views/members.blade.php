@@ -10,7 +10,7 @@
                 <div class="left">
                     <div class="members-heading">
                         <h2 class="aboutHead" style="max-width: 544px;">Burntwood & Cannock Tae Kwon Do
-                            Calendar of Events 2016 </h2>
+                            Calendar of Events {{ date("Y") }} </h2>
                         <div class="key">
                             <ul style="  columns: 2;
   -webkit-columns: 2;

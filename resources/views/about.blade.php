@@ -13,11 +13,13 @@
                     <p>
                         The Tae Kwon Do Association of Great Britain was formed in 1983 from a variety of different Tae Kwon Do groups in the UK.  The TAGB contains some of the worlds top martial arts performers, with several World, European and British champions.
                     </p>
+                    <div class="about-tabg">
+                        <img src="{{ url('images/about/tagb-logo.jpg') }}" alt="TAGB" style="border:none !important;">
+                        <a class="button-black" href="http://www.tagb.biz/" target="_blank">
+                            Visit TAGB >
+                        </a>
+                    </div>
 
-                    <img src="{{ url('images/about/tagb-logo.jpg') }}" alt="TAGB" style="border:none !important; width:180px;">
-                    <a class="button-black" href="http://www.tagb.biz/" target="_blank">
-                        Visit TAGB >
-                    </a>
                 </div>
                 <div class="right">
                     <img src="{{ url('images/about/tagb-commitee.jpg') }}" alt="" style="border:none !important; padding:0;"/>
