@@ -24,6 +24,81 @@ body {
   background-color: #000;
 }
 
+.hamburger {
+  z-index: 1000;
+  position: absolute;
+  right: 0;
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  width: 40px;
+  height: 4px;
+  background-color: red !important;
+  border-radius: 4px;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
+
+.mobile-navigation {
+  width: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  background: #000;
+  transition: width 300ms ease-in-out;
+  height: 100vh;
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .mobile-navigation {
+    display: block;
+  }
+}
+
+.mobile-navigation.is-active {
+  width: 60vw;
+}
+
+.mobile-navigation .inner {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.mobile-navigation .inner ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.mobile-navigation .inner ul li {
+  margin-left: 40px;
+}
+
+.mobile-navigation .inner ul li a {
+  color: #ED1C24;
+  font-size: 30px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (max-width: 320px) {
+  .mobile-navigation .inner ul li a {
+    font-size: 20px;
+  }
+}
+
+.mobile-navigation .inner ul li a:hover {
+  color: #c61017;
+}
+
 .headingPromo {
   font-size: 1.7rem;
   color: #fff;

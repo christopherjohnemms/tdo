@@ -17,6 +17,71 @@ body{
     background-color: #000;
 }
 
+.hamburger{
+    z-index: 1000;
+    position: absolute;
+    right: 0;
+}
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    width: 40px;
+    height: 4px;
+    background-color: red !important;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
+}
+
+.mobile-navigation{
+    width:0;
+    overflow: hidden;
+    position: fixed;
+    top:0;
+    right:0;
+    z-index: 999;
+    background: #000;
+    -webkit-transition: width 300ms ease-in-out;
+    -moz-transition: width 300ms ease-in-out;
+    -ms-transition: width 300ms ease-in-out;
+    -o-transition: width 300ms ease-in-out;
+    transition: width 300ms ease-in-out;
+    height: 100vh;
+    display: none;
+    @media(max-width:600px){
+        display: block;
+    }
+    &.is-active{
+        width: 60vw;
+    }
+    .inner{
+        display: flex;
+        align-items: center;
+        height:100%;
+        ul{
+            padding:0;
+            margin:0;
+            list-style-type: none;
+            li{
+                margin-left: 40px;
+
+                a{
+                    color:$red;
+                    font-size: 30px;
+                    font-weight:600;
+                    @media(max-width:320px){
+                        font-size: 20px;
+                    }
+                    cursor: pointer;
+                    &:hover{
+                        color: darken($red, 10%);
+                    }
+                }
+            }
+        }
+    }
+}
+
 .headingPromo{
     font-size:1.7rem;
     color:#fff;
