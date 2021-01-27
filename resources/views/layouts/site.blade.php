@@ -160,7 +160,7 @@
                         </div>
                         <div>
                             <p>
-                                sean@taekwondo.uk.net
+                                sean@bctaekwondo.co.uk
                             </p>
                         </div>
                     </div>
@@ -183,7 +183,7 @@
                         </div>
                         <div>
                             <p>
-                                sean@taekwondo.uk.net
+                                sean@bctaekwondo.co.uk
                             </p>
                         </div>
                     </div>
@@ -241,7 +241,7 @@
                     </div>
                     <div>
                         <p>
-                            sean@taekwondo.uk.net
+                            sean@bctaekwondo.co.uk
                         </p>
                     </div>
                 </div>
@@ -264,7 +264,7 @@
                     </div>
                     <div>
                         <p>
-                            sean@taekwondo.uk.net
+                            sean@bctaekwondo.co.uk
                         </p>
                     </div>
                 </div>
