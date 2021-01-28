@@ -2,10 +2,8 @@
 
 You received an email from : {{ $name }} <br><br>
 
-User details: <br><br>
+<strong>Contact details:</strong> <br><br>
 
-Name:  {{ $name }}<br>
-Email:  {{ $email }}<br>
-Message:  {!! $messageBody !!}<br><br>
-
-Thanks
+<strong>Name:</strong>  {{ $name }}<br>
+<strong>Email:</strong>  {{ $email }}<br>
+<strong>Message:</strong>  {!! $messageBody !!}<br><br>

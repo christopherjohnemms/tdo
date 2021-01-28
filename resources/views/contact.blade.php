@@ -5,7 +5,26 @@
     <div class="page" style="min-height: 700px;">
 
 
+
+
+
         <div class="welcome-block " style="padding-left:0 !important; padding-right:0px !important;">
+
+            @if(Session::has('success'))
+                <div class="alert alert-success" style="    background: green;
+    text-align: center;
+    padding: 30px 0px;
+    color: #fff;
+    margin: -10px 0 40px 0;
+    font-weight: bold;">
+                    {{ Session::get('success') }}
+                    @php
+                        Session::forget('success');
+                    @endphp
+                </div>
+            @endif
+
+
             <div class="flex-container tiger-row">
                 <div class="left">
                     <h2 class="aboutHead">Cannock Tae Kwon Do </h2>
@@ -93,14 +112,6 @@
                     </p>
 
 
-                    @if(Session::has('success'))
-                        <div class="alert alert-success">
-                            {{ Session::get('success') }}
-                            @php
-                                Session::forget('success');
-                            @endphp
-                        </div>
-                    @endif
 
                     <form method="POST" id="contact" action="{{ route('contact-form.store') }}">
                         {{ csrf_field() }}
