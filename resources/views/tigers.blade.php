@@ -7,7 +7,7 @@
        <a href="#" class="tiger-hero">
            <div class="tiger-div">
                <img src="{{ url('images/tigers/taekwondo-tigers-header.png') }}" style="width:100%; display: block; margin:0 auto; max-width:1160px;" />
-               <div class="d-l-pack"></div>
+{{--               <div class="d-l-pack"></div>--}}
            </div>
        </a>
 

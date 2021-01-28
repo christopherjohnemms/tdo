@@ -54,10 +54,10 @@
 {{--            <p>Telephone <span>01543 570036</span></p>--}}
         </div>
         <div class="img">
-            <img src="{{ url('images/header/burntwood-cannock-taekwondo-logo.png') }}" alt=""/>
+            <a href="{{ url('/') }}"><img src="{{ url('images/header/burntwood-cannock-taekwondo-logo.png') }}" alt=""/></a>
         </div>
         <div class="img img-last">
-            <img src="{{ url('images/header/burntwood-cannock-taekwondo-tigers-logo.png') }}" alt=""/>
+            <a href="{{ url('/tigers') }}"><img src="{{ url('images/header/burntwood-cannock-taekwondo-tigers-logo.png') }}" alt=""/></a>
         </div>
         <div class="detail detail-last">
             <p style="text-align: right;">Call us <span>07773 901281</span></p>
@@ -190,9 +190,9 @@
                 </div>
                 <div class="social-flex">
                     <ul>
-                        <li><a href="#" target="_blank"><img src="{{ url('images/footer/facebook-logo.png') }}"  style="width:45px; border-radius:5px;"/></a></li>
-                        <li><a href="#" target="_blank"><img src="{{ url('images/footer/twitter-logo.png') }}"  style="width:45px; border-radius:5px;" /></a></li>
-                        <li><a href="#" target="_blank"><img src="{{ url('images/footer/instagram-logo.png') }}"  style="width:45px;" /></a></li>
+                        <li><a href="https://www.facebook.com/groups/46632409696/" target="_blank"><img src="{{ url('images/footer/facebook-logo.png') }}"  style="width:45px; border-radius:5px;"/></a></li>
+                        <li><a href="https://twitter.com/taekwondo_bc?lang=en" target="_blank"><img src="{{ url('images/footer/twitter-logo.png') }}"  style="width:45px; border-radius:5px;" /></a></li>
+                        <li><a href="https://www.instagram.com/bctaekwondo/?hl=en" target="_blank"><img src="{{ url('images/footer/instagram-logo.png') }}"  style="width:45px;" /></a></li>
                     </ul>
                 </div>
             </div>
@@ -264,16 +264,16 @@
                     </div>
                     <div>
                         <p>
-                            sean@bctaekwondo.co.uk
+                            sean@bctaekwondo.co.ukc
                         </p>
                     </div>
                 </div>
             </div>
             <div class="social-flex">
                 <ul>
-                    <li><a href="#" target="_blank"><img src="{{ url('images/footer/facebook-logo.png') }}"  style="width:45px; border-radius:5px;"/></a></li>
-                    <li><a href="#" target="_blank"><img src="{{ url('images/footer/twitter-logo.png') }}"  style="width:45px; border-radius:5px;" /></a></li>
-                    <li><a href="#" target="_blank"><img src="{{ url('images/footer/instagram-logo.png') }}"  style="width:45px;" /></a></li>
+                    <li><a href="https://www.facebook.com/groups/46632409696/" target="_blank"><img src="{{ url('images/footer/facebook-logo.png') }}"  style="width:45px; border-radius:5px;"/></a></li>
+                    <li><a href="https://twitter.com/taekwondo_bc?lang=en" target="_blank"><img src="{{ url('images/footer/twitter-logo.png') }}"  style="width:45px; border-radius:5px;" /></a></li>
+                    <li><a href="https://www.instagram.com/bctaekwondo/?hl=en" target="_blank"><img src="{{ url('images/footer/instagram-logo.png') }}"  style="width:45px;" /></a></li>
                 </ul>
             </div>
         </div>

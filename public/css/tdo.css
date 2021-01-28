@@ -28,6 +28,13 @@ body {
   z-index: 1000;
   position: absolute;
   right: 0;
+  display: none !important;
+}
+
+@media (max-width: 600px) {
+  .hamburger {
+    display: block !important;
+  }
 }
 
 .hamburger-inner,

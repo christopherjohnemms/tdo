@@ -21,6 +21,10 @@ body{
     z-index: 1000;
     position: absolute;
     right: 0;
+    display: none !important;
+    @media (max-width: 600px) {
+        display: block !important;
+    }
 }
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
     width: 40px;

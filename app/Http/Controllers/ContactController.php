@@ -27,7 +27,7 @@ class ContactController extends Controller
             'messageBody' => $input['message'],
         ), function($message) use ($request){
             $message->from($request->email);
-            $message->to('christopherjohnemms@gmail.com', 'Admin')->subject('New Website Enquiry');
+            $message->to('sean@bctaekwondo.co.uk', 'Admin')->subject('New Website Enquiry');
         });
 
         return redirect()->back()->with(['success' => 'Thank you for your enquiry!']);
