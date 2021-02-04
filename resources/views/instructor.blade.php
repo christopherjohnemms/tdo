@@ -72,7 +72,7 @@
                     </p>
                 </div>
                 <div class="right">
-                    <img src="{{ url('images/instructor/sean-hardwick-with-students.jpg') }}" alt=""/>
+                    <img src="{{ url('images/members/instructor.png') }}" alt=""/>
                 </div>
             </div>
 

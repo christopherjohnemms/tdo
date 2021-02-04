@@ -237,7 +237,7 @@
             <div class="flex-container tiger-row">
                 <div class="left">
                         <h2 class="aboutHead">Grading Sheets for Burntwood & Cannock Tae Kwon Do Members</h2>
-                        <div class="grading" style="display: flex; margin-top:30px;">
+                        <div class="grading" style=" margin-top:30px;">
                             <div>
                                 <h3 >Grading Theory Sheets</h3>
                                 <ul>

@@ -825,7 +825,17 @@ body{
     }
 
     .grading{
-        justify-content: space-between;
+        //justify-content: space-between;
+        //display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 5px;
+        @media(max-width: 800px){
+            grid-template-columns: 1fr 1fr;
+        }
+        @media(max-width: 800px){
+            grid-template-columns: 1fr;
+        }
         h3{
             color:$red;
             font-size:18px;
@@ -842,7 +852,7 @@ body{
                     height:0;
                 }
                 a{
-                    font-size: 14px;
+                    font-size: 13px;
                     &:before{
                         content:"";
                         width:19px;
@@ -851,7 +861,7 @@ body{
                         background-color: #000;
                         display: inline-block;
                         position: relative;
-                        top: 3px;
+                        top: 4px;
                         background-image: url('/images/members/download-grade-sheet-normal.jpg');
                     }
                     &:hover {
@@ -917,6 +927,7 @@ body{
          .phone-flex{
              @media(max-width: 600px){
                  display: flex !important;
+                 margin-bottom:20px;
              }
 
              display: none !important;
@@ -947,6 +958,7 @@ body{
             margin-left:50px;
             .phone-flex{
                 display: flex;
+                margin-bottom:20px;
                 p{
                     color:#fff;
                     font-size:14px;
@@ -998,4 +1010,8 @@ body{
     &:hover{
         filter: brightness(1.0);
     }
+}
+
+.antispam{
+    display: none;
 }

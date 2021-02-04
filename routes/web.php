@@ -46,7 +46,9 @@ Route::get('/instructor', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
-
+Route::get('/privacy-policy', function () {
+    return view('privacy');
+});
 Route::get('/members', function () {
 
     $january = Event::where('month','january')->get();

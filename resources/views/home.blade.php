@@ -111,7 +111,9 @@
         $('.home-slider').slick({
             infinite: true,
             dots:false,
-            arrows:true
+            arrows:true,
+            autoplay: true,
+            autoplaySpeed: 1500
         });
     </script>
 @endsection

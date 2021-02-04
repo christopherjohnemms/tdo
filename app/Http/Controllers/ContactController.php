@@ -16,20 +16,26 @@ class ContactController extends Controller
             'message' => 'required',
         ]);
 
-        $input = $request->all();
+       if($request->url == null) {
+           $input = $request->all();
 
-        Contact::create($input);
+           Contact::create($input);
 
-        //  Send mail to admin
-        Mail::send('contactMail', array(
-            'name' => $input['name'],
-            'email' => $input['email'],
-            'messageBody' => $input['message'],
-        ), function($message) use ($request){
-            $message->from($request->email);
-            $message->to('sean@bctaekwondo.co.uk', 'Admin')->subject('New Website Enquiry');
-        });
+           //  Send mail to admin
+           Mail::send('contactMail', array(
+               'name' => $input['name'],
+               'email' => $input['email'],
+               'messageBody' => $input['message'],
+           ), function($message) use ($request){
+               $message->from($request->email);
+               $message->to('sean@bctaekwondo.co.uk', 'Admin')->subject('New Website Enquiry');
+           });
 
-        return redirect()->back()->with(['success' => 'Thank you for your enquiry!']);
+           return redirect()->back()->with(['success' => 'Thank you for your enquiry!']);
+       } else{
+           return redirect()->back()->with(['success' => 'Failed!']);
+       }
+
+
     }
 }

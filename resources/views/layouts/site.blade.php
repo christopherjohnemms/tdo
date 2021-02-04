@@ -37,7 +37,7 @@
         <div class="inner">
             <ul>
                 <li><a href={{ url('/') }}"">Home</a></li>
-                <li><a href={{ url('/tigers') }}"">Tigers</a></li>
+                <li><a href={{ url('/tigers') }}>Tigers</a></li>
                 <li><a href="{{ url('/starting') }}">Starting</a></li>
                 <li><a href="{{ url('/about') }}">About</a></li>
                 <li><a href="{{ url('/instructor') }}">Instructor</a></li>
@@ -149,7 +149,7 @@
                         </div>
                         <div>
                             <p>
-                                +44 (0) 1543 570036<br />
+{{--                                +44 (0) 1543 570036<br />--}}
                                 +44 (0) 7773 901281
                             </p>
                         </div>
@@ -172,7 +172,7 @@
                         </div>
                         <div>
                             <p>
-                                +44 (0) 1543 570036<br />
+{{--                                +44 (0) 1543 570036<br />--}}
                                 +44 (0) 7773 901281
                             </p>
                         </div>
@@ -230,7 +230,7 @@
                     </div>
                     <div>
                         <p>
-                            +44 (0) 1543 570036<br />
+{{--                            +44 (0) 1543 570036<br />--}}
                             +44 (0) 7773 901281
                         </p>
                     </div>
@@ -253,7 +253,7 @@
                     </div>
                     <div>
                         <p>
-                            +44 (0) 1543 570036<br />
+{{--                            +44 (0) 1543 570036<br />--}}
                             +44 (0) 7773 901281
                         </p>
                     </div>
@@ -264,7 +264,7 @@
                     </div>
                     <div>
                         <p>
-                            sean@bctaekwondo.co.ukc
+                            sean@bctaekwondo.co.uk
                         </p>
                     </div>
                 </div>
