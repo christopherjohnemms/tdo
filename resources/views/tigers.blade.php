@@ -1,4 +1,6 @@
 @extends('layouts.site')
+@section('title', 'Tigers')
+@section('meta', 'Burntwood and Cannock Taekwondo Tigers is a children’s class offering exciting, energetic classes where kids can learn the Korean art of Kick Fighting known as Taekwondo')
 
 @section('content')
 

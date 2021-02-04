@@ -2,6 +2,9 @@
 
 @section('footerchoice', 'yellow')
 
+@section('title', 'Home')
+@section('meta', 'Burntwood and Cannock Taekwondo is the number 1 Taekwondo club in Staffordshire and the West Midlands and the only Taekwondo club officially recognised by the Taekwondo Association of Great Britain')
+
 @section('content')
 
     <div class="page" style="min-height: 700px;">

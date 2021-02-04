@@ -1,4 +1,6 @@
 @extends('layouts.site')
+@section('title', 'About')
+@section('meta', 'General information on Taekwondo and the history of Taekwondo for people interested in beginning Taekwondo classes with Burntwood and Cannock Taekwondo')
 
 @section('content')
 

@@ -1,5 +1,6 @@
 @extends('layouts.site')
-
+@section('title', 'Instructor')
+@section('meta', 'A biography of Master Sean Hardwick, instructor of Burntwood and Cannock Taekwondo, the number 1 Taekwondo club in Staffordshire and the West Midlands')
 @section('content')
 
     <div class="page" style="min-height: 700px;">

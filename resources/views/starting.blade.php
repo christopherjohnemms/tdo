@@ -1,6 +1,8 @@
 @extends('layouts.site')
 
 @section('footerchoice', 'yellow')
+@section('title', 'Starting')
+@section('meta', 'Information for people interested in beginning Taekwondo classes with Burntwood and Cannock Taekwondo, the number 1 Taekwondo club in Staffordshire and the West Midlands')
 
 @section('content')
 

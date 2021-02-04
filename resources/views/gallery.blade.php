@@ -1,5 +1,6 @@
 @extends('layouts.site')
-
+@section('title', 'Gallery')
+@section('meta', 'A gallery of images of students from Burntwood and Cannock Taekwondo, and from Taekwondo tournaments and competitions that Burntwood and Cannock Taekwondo have taken part in')
 @section('content')
 
     <div class="page" style="min-height: 700px;">
