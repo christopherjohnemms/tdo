@@ -116,7 +116,7 @@
             dots:false,
             arrows:true,
             autoplay: true,
-            autoplaySpeed: 1500
+            autoplaySpeed: 2500
         });
     </script>
 @endsection
