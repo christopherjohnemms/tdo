@@ -1144,3 +1144,9 @@ body {
   display: none;
 }
 
+@media (max-width: 600px) {
+  .break-mobile {
+    display: block;
+  }
+}
+

@@ -28,7 +28,7 @@
 
             <div class="flex-container tiger-row">
                 <div class="left">
-                    <h2 class="aboutHead">Cannock Tae Kwon Do </h2>
+                    <h2 class="aboutHead">Cannock <span class="break-mobile">Tae Kwon Do</span></h2>
 
                     <p style="margin-bottom:0;">
                         <span style="font-weight:700;">Classes Every Tuesday & Thursday</span><br />
@@ -63,7 +63,7 @@
 
             <div class="flex-container tiger-row reverse">
                 <div class="left">
-                    <h2 class="aboutHead">Burntwood Tae Kwon Do </h2>
+                    <h2 class="aboutHead">Burntwood <span class="break-mobile">Tae Kwon Do</span> </h2>
 
                     <p style="margin-bottom:0;">
                         <span style="font-weight:700;">Classes Every Monday & Wednesday</span><br />
@@ -98,7 +98,7 @@
                 <div class="left">
                     <h2 class="aboutHead">Want to know more
                         about Burntwood & Cannock
-                        Tae Kwon Do?</h2>
+                        <span class="break-mobile">Tae Kwon Do?</span></h2>
 
                     <p style="">
                         For more information on either the Burntwood Tae Kwon Do Club or the Cannock Tae Kwon Do Club, feel free to call Sean Hardwick on<br />

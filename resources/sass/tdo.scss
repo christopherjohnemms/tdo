@@ -1015,3 +1015,9 @@ body{
 .antispam{
     display: none;
 }
+
+.break-mobile{
+    @media(max-width: 600px){
+        display: block;
+    }
+}
