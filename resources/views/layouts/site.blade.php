@@ -220,7 +220,7 @@
                             <strong>Burntwood Tae Kwon Do Club</strong><br />
                             Erasmus Darwin Academy<br />
                             Pool Road, Burntwood<br />
-                            Staffordshire  WS1 3QW<br />
+                            Staffordshire  WS7 3QW<br />
                         </p>
                         <p>
                             <strong>Cannock Tae Kwon Do Club</strong><br />
