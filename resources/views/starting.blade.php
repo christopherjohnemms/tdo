@@ -55,8 +55,8 @@
                     <div class="faq-row">
                         <h2>How much will it cost? </h2>
                         <p>
-                            Per Lesson <span style="font-size:19px; font-weight:700;">£6.50</span><br />
-                            Monthly Membership <span style="font-size:19px; font-weight:700;">£32.00</span><br />
+                            Per Lesson <span style="font-size:19px; font-weight:700;">£7.00</span><br />
+                            Monthly Membership <span style="font-size:19px; font-weight:700;">£35.00</span><br />
                             <span style="font-size: 12px;">(payment by cash or cheque)</span>
                         </p>
                     </div>

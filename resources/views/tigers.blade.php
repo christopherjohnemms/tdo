@@ -112,15 +112,15 @@
                         Due to this, I am listing below all of the expenses before you and your child start training in Tae Kwon Do, as I have always conducted the running of my club in a very professional manner.
                     </p>
 
-                    <p style="margin-bottom:0;background: #FFCB27; padding:3px; font-weight:700; font-size:22px;">LESSON FEES: £32 <span style="font-size:16px">per month</span></p>
+                    <p style="margin-bottom:0;background: #FFCB27; padding:3px; font-weight:700; font-size:22px;">LESSON FEES: £35 <span style="font-size:16px">per month</span></p>
                     <p style="margin-top:5px;">
-                    £32 per month by standing order OR £6.50 per lesson.
+                    £35 per month by standing order OR £7 per lesson.
 <br />
                     Paying monthly gives unlimited training – NO contracts.
                     </p>
 
 
-                    <p style="margin-bottom:0;background: #FFCB27; padding:3px; font-weight:700; font-size:22px;">SUIT: £40</p>
+                    <p style="margin-bottom:0;background: #FFCB27; padding:3px; font-weight:700; font-size:22px;">SUIT: £45</p>
                     <p style="margin-top:5px;">
                     Please note I do not advise you to buy a suit,<br />
                     until your child has been training for a minimum of 6 weeks.
