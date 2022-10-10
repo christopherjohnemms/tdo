@@ -111,10 +111,10 @@
 
                     <div class="pack schedule-pack" >
                         <h3 class="headingPromo">Beginner's pack</h3>
-                        <a href="{{ url('/pdf/taekwondo-beginners-pack.pdf') }}" target="_blank">
-                            <img src="{{ url('images/starting/beginners-pack.jpg') }}" style="width:100%; display: block;" alt="Beginners Pack"/>
+                        <a href="{{ url('/pdf/EP067_TKD_Beginner_Pack_Sep22_AW_singles.pdf') }}" target="_blank">
+                            <img src="{{ url('images/starting/beginners-pack.jpg?v=1') }}" style="width:100%; display: block;" alt="Beginners Pack"/>
                         </a>
-                        <a href="{{ url('/pdf/taekwondo-beginners-pack.pdf') }}" target="_blank">
+                        <a href="{{ url('/pdf/EP067_TKD_Beginner_Pack_Sep22_AW_singles.pdf') }}" target="_blank">
                             <div class="d-l-pack-start"></div>
                         </a>
                     </div>
